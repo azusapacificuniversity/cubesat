@@ -996,13 +996,13 @@ LETTER landscape</description>
 <sheets>
 <sheet>
 <plain>
-<text x="261.62" y="111.76" size="5.08" layer="88">Todo:</text>
-<text x="266.7" y="104.14" size="5.08" layer="88">RBF Switch</text>
-<text x="266.7" y="96.52" size="5.08" layer="88">Separation Switches</text>
-<text x="266.7" y="88.9" size="5.08" layer="88">DOW Temperature and SHA?</text>
-<text x="266.7" y="81.28" size="5.08" layer="88">Pmod?</text>
-<text x="266.7" y="73.66" size="5.08" layer="88">CAN?</text>
-<text x="266.7" y="66.04" size="5.08" layer="88">iCE40HX8K vs iCE40UP5K?</text>
+<text x="205.74" y="86.36" size="5.08" layer="88" rot="MR0">Todo:</text>
+<text x="246.38" y="78.74" size="5.08" layer="88" rot="MR0">RBF Switch</text>
+<text x="246.38" y="55.88" size="5.08" layer="88" rot="MR0">Separation Switches</text>
+<text x="246.38" y="48.26" size="5.08" layer="88" rot="MR0">DOW Temperature and SHA?</text>
+<text x="246.38" y="63.5" size="5.08" layer="88" rot="MR0">Pmod?</text>
+<text x="246.38" y="71.12" size="5.08" layer="88" rot="MR0">CAN?</text>
+<text x="246.38" y="40.64" size="5.08" layer="88" rot="MR0">iCE40HX8K vs iCE40UP5K?</text>
 <text x="165.1" y="121.92" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="165.1" y="68.58" size="1.778" layer="91" rot="MR0">N/C</text>
 </plain>
