@@ -972,6 +972,118 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MEM2080-00-128-00-A_REVA">
+<packages>
+<package name="GCT_MEM2080-00-128-00-A_REVA">
+<wire x1="6.53" y1="-7.015" x2="-6.53" y2="-7.015" width="0.1" layer="51"/>
+<wire x1="-6.53" y1="-7.015" x2="-6.53" y2="7.015" width="0.1" layer="51"/>
+<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.1" layer="51"/>
+<wire x1="6.53" y1="7.015" x2="6.53" y2="-7.015" width="0.1" layer="51"/>
+<polygon width="0.01" layer="43">
+<vertex x="1.97" y="-3.985"/>
+<vertex x="-3.03" y="-3.985"/>
+<vertex x="-3.03" y="1.465"/>
+<vertex x="5.97" y="1.465"/>
+<vertex x="5.97" y="-6.385"/>
+<vertex x="1.97" y="-6.385"/>
+</polygon>
+<polygon width="0.01" layer="41">
+<vertex x="1.97" y="-3.985"/>
+<vertex x="-3.03" y="-3.985"/>
+<vertex x="-3.03" y="1.465"/>
+<vertex x="5.97" y="1.465"/>
+<vertex x="5.97" y="-6.385"/>
+<vertex x="1.97" y="-6.385"/>
+</polygon>
+<wire x1="-6.53" y1="4.335" x2="-6.53" y2="-3.635" width="0.2" layer="21"/>
+<wire x1="-6.53" y1="6.865" x2="-6.53" y2="7.015" width="0.2" layer="21"/>
+<wire x1="6.53" y1="3.365" x2="6.53" y2="-3.635" width="0.2" layer="21"/>
+<wire x1="6.53" y1="7.015" x2="6.53" y2="6.865" width="0.2" layer="21"/>
+<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.2" layer="21"/>
+<wire x1="-7.08" y1="13.465" x2="-7.08" y2="-7.565" width="0.05" layer="39"/>
+<wire x1="-7.08" y1="-7.565" x2="7.08" y2="-7.565" width="0.05" layer="39"/>
+<wire x1="7.08" y1="-7.565" x2="7.08" y2="13.465" width="0.05" layer="39"/>
+<wire x1="7.08" y1="13.465" x2="-7.08" y2="13.465" width="0.05" layer="39"/>
+<text x="-7.0292" y="-9.5658" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.953" y="-10.3684" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="21"/>
+<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-3.3" y1="-7.015" x2="-0.9" y2="-7.015" width="0.2" layer="21"/>
+<wire x1="1" y1="-7.015" x2="5.7" y2="-7.015" width="0.2" layer="21"/>
+<smd name="P1" x="-2.38" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P2" x="-1.28" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P3" x="-0.18" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P4" x="0.92" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P5" x="2.02" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P6" x="3.12" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P7" x="4.22" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P8" x="5.32" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="S1" x="-6.26" y="5.6" dx="1.14" dy="1.83" layer="1"/>
+<smd name="S2" x="6.4" y="5.115" dx="0.86" dy="2.8" layer="1"/>
+<smd name="S3" x="-6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
+<smd name="S4" x="6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
+<smd name="DSW1" x="-4.17" y="-6.85" dx="0.9" dy="0.93" layer="1"/>
+<smd name="DSW2" x="0.095" y="-6.925" dx="1.05" dy="0.78" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MEM2080-00-128-00-A_REVA">
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DAT2" x="-17.78" y="0" length="middle"/>
+<pin name="CD/DAT3" x="-17.78" y="-2.54" length="middle"/>
+<pin name="CMD" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="VDD" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="CLK" x="-17.78" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="VSS" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="DAT0" x="-17.78" y="5.08" length="middle"/>
+<pin name="DAT1" x="-17.78" y="2.54" length="middle"/>
+<pin name="LEVER_PIN" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+<pin name="SWITCH_PIN" x="-17.78" y="-10.16" length="middle" direction="pas"/>
+<pin name="SHIELD" x="17.78" y="-15.24" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MEM2080-00-128-00-A_REVA" prefix="J">
+<description> &lt;a href="https://pricing.snapeda.com/parts/MEM2080-00-128-00-A/Global%20Connector%20Technology/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MEM2080-00-128-00-A_REVA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GCT_MEM2080-00-128-00-A_REVA">
+<connects>
+<connect gate="G$1" pin="CD/DAT3" pad="P2"/>
+<connect gate="G$1" pin="CLK" pad="P5"/>
+<connect gate="G$1" pin="CMD" pad="P3"/>
+<connect gate="G$1" pin="DAT0" pad="P7"/>
+<connect gate="G$1" pin="DAT1" pad="P8"/>
+<connect gate="G$1" pin="DAT2" pad="P1"/>
+<connect gate="G$1" pin="LEVER_PIN" pad="DSW1"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
+<connect gate="G$1" pin="SWITCH_PIN" pad="DSW2"/>
+<connect gate="G$1" pin="VDD" pad="P4"/>
+<connect gate="G$1" pin="VSS" pad="P6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 9 (8 + 1) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold "/>
+<attribute name="MF" value="Global Connector Technology"/>
+<attribute name="MP" value="MEM2080-00-128-00-A"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MEM2080-00-128-00-A/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -992,6 +1104,8 @@ LETTER landscape</description>
 <part name="PL2" library="apu-csk-motherboard" deviceset="ICEWERX-PL2" device=""/>
 <part name="PL3" library="apu-csk-motherboard" deviceset="ICEWERX-PL3" device=""/>
 <part name="FRAME1" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
+<part name="J1" library="MEM2080-00-128-00-A_REVA" deviceset="MEM2080-00-128-00-A_REVA" device=""/>
+<part name="J2" library="MEM2080-00-128-00-A_REVA" deviceset="MEM2080-00-128-00-A_REVA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1048,6 +1162,14 @@ LETTER landscape</description>
 <instance part="FEATHER1" gate="-16" x="177.8" y="134.62" smashed="yes">
 <attribute name="NAME" x="177.8" y="158.75" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="177.8" y="113.03" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="J1" gate="G$1" x="220.98" y="162.56" smashed="yes">
+<attribute name="NAME" x="208.28" y="181.102" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.28" y="139.7" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="220.98" y="116.84" smashed="yes">
+<attribute name="NAME" x="208.28" y="135.382" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.28" y="93.98" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>

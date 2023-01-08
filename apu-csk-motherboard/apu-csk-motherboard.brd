@@ -156,7 +156,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDI2NzMx" projecturn="a.cGVyc29uYWw6dWUyZDI2NzMxIzIwMjIwOTMwNTYyNjE0OTA2" f3durn="urn:adsk.wipprod:dm.lineage:kB2Wh1Q4TRikTqmI8AqMMA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="4b27a098-c4a4-4352-931e-bf35d80debb3" lastsyncedrevisionid="4b27a098-c4a4-4352-931e-bf35d80debb3" lastboardhashguid="35456882-ee58-db46-62f4-8c871885f9ca" lastpushedtime="2022-10-02T03:41:01Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDI2NzMx" projecturn="a.cGVyc29uYWw6dWUyZDI2NzMxIzIwMjIwOTMwNTYyNjE0OTA2" f3durn="urn:adsk.wipprod:dm.lineage:kB2Wh1Q4TRikTqmI8AqMMA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="4b27a098-c4a4-4352-931e-bf35d80debb3" lastsyncedrevisionid="4b27a098-c4a4-4352-931e-bf35d80debb3" lastboardhashguid="35456882-ee58-db46-62f4-8c871885f9ca" lastpushedtime="2022-10-02T03:41:01Z" linktopcb3d="false"/>
 <plain>
 <wire x1="39.9699" y1="4.4855" x2="41.4939" y2="2.9615" width="0.1524" layer="20" curve="90" locked="yes"/>
 <wire x1="55.0321" y1="2.9615" x2="41.4939" y2="2.9615" width="0.1524" layer="20" locked="yes"/>
@@ -419,6 +419,61 @@
 </package>
 </packages>
 </library>
+<library name="MEM2080-00-128-00-A_REVA">
+<packages>
+<package name="GCT_MEM2080-00-128-00-A_REVA">
+<wire x1="6.53" y1="-7.015" x2="-6.53" y2="-7.015" width="0.1" layer="51"/>
+<wire x1="-6.53" y1="-7.015" x2="-6.53" y2="7.015" width="0.1" layer="51"/>
+<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.1" layer="51"/>
+<wire x1="6.53" y1="7.015" x2="6.53" y2="-7.015" width="0.1" layer="51"/>
+<polygon width="0.01" layer="43">
+<vertex x="1.97" y="-3.985"/>
+<vertex x="-3.03" y="-3.985"/>
+<vertex x="-3.03" y="1.465"/>
+<vertex x="5.97" y="1.465"/>
+<vertex x="5.97" y="-6.385"/>
+<vertex x="1.97" y="-6.385"/>
+</polygon>
+<polygon width="0.01" layer="41">
+<vertex x="1.97" y="-3.985"/>
+<vertex x="-3.03" y="-3.985"/>
+<vertex x="-3.03" y="1.465"/>
+<vertex x="5.97" y="1.465"/>
+<vertex x="5.97" y="-6.385"/>
+<vertex x="1.97" y="-6.385"/>
+</polygon>
+<wire x1="-6.53" y1="4.335" x2="-6.53" y2="-3.635" width="0.2" layer="21"/>
+<wire x1="-6.53" y1="6.865" x2="-6.53" y2="7.015" width="0.2" layer="21"/>
+<wire x1="6.53" y1="3.365" x2="6.53" y2="-3.635" width="0.2" layer="21"/>
+<wire x1="6.53" y1="7.015" x2="6.53" y2="6.865" width="0.2" layer="21"/>
+<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.2" layer="21"/>
+<wire x1="-7.08" y1="13.465" x2="-7.08" y2="-7.565" width="0.05" layer="39"/>
+<wire x1="-7.08" y1="-7.565" x2="7.08" y2="-7.565" width="0.05" layer="39"/>
+<wire x1="7.08" y1="-7.565" x2="7.08" y2="13.465" width="0.05" layer="39"/>
+<wire x1="7.08" y1="13.465" x2="-7.08" y2="13.465" width="0.05" layer="39"/>
+<text x="-7.0292" y="-9.5658" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.953" y="-10.3684" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="21"/>
+<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-3.3" y1="-7.015" x2="-0.9" y2="-7.015" width="0.2" layer="21"/>
+<wire x1="1" y1="-7.015" x2="5.7" y2="-7.015" width="0.2" layer="21"/>
+<smd name="P1" x="-2.38" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P2" x="-1.28" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P3" x="-0.18" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P4" x="0.92" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P5" x="2.02" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P6" x="3.12" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P7" x="4.22" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P8" x="5.32" y="5.615" dx="0.7" dy="1.1" layer="1"/>
+<smd name="S1" x="-6.26" y="5.6" dx="1.14" dy="1.83" layer="1"/>
+<smd name="S2" x="6.4" y="5.115" dx="0.86" dy="2.8" layer="1"/>
+<smd name="S3" x="-6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
+<smd name="S4" x="6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
+<smd name="DSW1" x="-4.17" y="-6.85" dx="0.9" dy="0.93" layer="1"/>
+<smd name="DSW2" x="0.095" y="-6.925" dx="1.05" dy="0.78" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -630,6 +685,28 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="1" y="62.25" locked="yes" size="1.27" layer="25"/>
 <attribute name="VALUE" x="0" y="55.75" locked="yes" size="1.27" layer="27"/>
 </element>
+<element name="J1" library="MEM2080-00-128-00-A_REVA" package="GCT_MEM2080-00-128-00-A_REVA" value="MEM2080-00-128-00-A_REVA" x="-8" y="13" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 9 (8 + 1) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Global Connector Technology" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MEM2080-00-128-00-A" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-15.0292" y="3.4342" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="None" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MEM2080-00-128-00-A/?ref=eda" x="-8" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-14.953" y="2.6316" size="1.27" layer="27" align="top-left"/>
+</element>
+<element name="J2" library="MEM2080-00-128-00-A_REVA" package="GCT_MEM2080-00-128-00-A_REVA" value="MEM2080-00-128-00-A_REVA" x="-23" y="13" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 9 (8 + 1) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Global Connector Technology" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MEM2080-00-128-00-A" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-30.0292" y="3.4342" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="None" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MEM2080-00-128-00-A/?ref=eda" x="-23" y="13" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-29.953" y="2.6316" size="1.27" layer="27" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -663,6 +740,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="FEATHER1" pad="B2"/>
 <contactref element="H1" pad="43"/>
 <wire x1="37.9409" y1="21.2852" x2="67.31" y2="83.185" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VDD">
+<contactref element="J1" pad="P4"/>
+<contactref element="J2" pad="P4"/>
+<wire x1="-22.08" y1="18.615" x2="-7.08" y2="18.615" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VSS">
+<contactref element="J1" pad="P6"/>
+<contactref element="J2" pad="P6"/>
+<wire x1="-19.88" y1="18.615" x2="-4.88" y2="18.615" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
