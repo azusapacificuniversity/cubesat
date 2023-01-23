@@ -419,58 +419,44 @@
 </package>
 </packages>
 </library>
-<library name="MEM2080-00-128-00-A_REVA">
+<library name="503182-1852">
 <packages>
-<package name="GCT_MEM2080-00-128-00-A_REVA">
-<wire x1="6.53" y1="-7.015" x2="-6.53" y2="-7.015" width="0.1" layer="51"/>
-<wire x1="-6.53" y1="-7.015" x2="-6.53" y2="7.015" width="0.1" layer="51"/>
-<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.1" layer="51"/>
-<wire x1="6.53" y1="7.015" x2="6.53" y2="-7.015" width="0.1" layer="51"/>
-<polygon width="0.01" layer="43">
-<vertex x="1.97" y="-3.985"/>
-<vertex x="-3.03" y="-3.985"/>
-<vertex x="-3.03" y="1.465"/>
-<vertex x="5.97" y="1.465"/>
-<vertex x="5.97" y="-6.385"/>
-<vertex x="1.97" y="-6.385"/>
-</polygon>
-<polygon width="0.01" layer="41">
-<vertex x="1.97" y="-3.985"/>
-<vertex x="-3.03" y="-3.985"/>
-<vertex x="-3.03" y="1.465"/>
-<vertex x="5.97" y="1.465"/>
-<vertex x="5.97" y="-6.385"/>
-<vertex x="1.97" y="-6.385"/>
-</polygon>
-<wire x1="-6.53" y1="4.335" x2="-6.53" y2="-3.635" width="0.2" layer="21"/>
-<wire x1="-6.53" y1="6.865" x2="-6.53" y2="7.015" width="0.2" layer="21"/>
-<wire x1="6.53" y1="3.365" x2="6.53" y2="-3.635" width="0.2" layer="21"/>
-<wire x1="6.53" y1="7.015" x2="6.53" y2="6.865" width="0.2" layer="21"/>
-<wire x1="-6.53" y1="7.015" x2="6.53" y2="7.015" width="0.2" layer="21"/>
-<wire x1="-7.08" y1="13.465" x2="-7.08" y2="-7.565" width="0.05" layer="39"/>
-<wire x1="-7.08" y1="-7.565" x2="7.08" y2="-7.565" width="0.05" layer="39"/>
-<wire x1="7.08" y1="-7.565" x2="7.08" y2="13.465" width="0.05" layer="39"/>
-<wire x1="7.08" y1="13.465" x2="-7.08" y2="13.465" width="0.05" layer="39"/>
-<text x="-7.0292" y="-9.5658" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.953" y="-10.3684" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="21"/>
-<circle x="-7.68" y="5.615" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-3.3" y1="-7.015" x2="-0.9" y2="-7.015" width="0.2" layer="21"/>
-<wire x1="1" y1="-7.015" x2="5.7" y2="-7.015" width="0.2" layer="21"/>
-<smd name="P1" x="-2.38" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P2" x="-1.28" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P3" x="-0.18" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P4" x="0.92" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P5" x="2.02" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P6" x="3.12" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P7" x="4.22" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="P8" x="5.32" y="5.615" dx="0.7" dy="1.1" layer="1"/>
-<smd name="S1" x="-6.26" y="5.6" dx="1.14" dy="1.83" layer="1"/>
-<smd name="S2" x="6.4" y="5.115" dx="0.86" dy="2.8" layer="1"/>
-<smd name="S3" x="-6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
-<smd name="S4" x="6.48" y="-5.65" dx="0.7" dy="3.33" layer="1"/>
-<smd name="DSW1" x="-4.17" y="-6.85" dx="0.9" dy="0.93" layer="1"/>
-<smd name="DSW2" x="0.095" y="-6.925" dx="1.05" dy="0.78" layer="1"/>
+<package name="MOLEX_503182-1852">
+<rectangle x1="7.08471875" y1="-4.183690625" x2="7.47" y2="-1.775" layer="39"/>
+<rectangle x1="-3.65928125" y1="-2.681809375" x2="5.55" y2="0.725" layer="41"/>
+<rectangle x1="-3.65585" y1="0.7261625" x2="5.55" y2="5.485" layer="43"/>
+<rectangle x1="-3.65771875" y1="0.726534375" x2="5.55" y2="5.485" layer="41"/>
+<rectangle x1="-3.654709375" y1="0.725934375" x2="5.55" y2="5.485" layer="42"/>
+<wire x1="-7.07" y1="8.225" x2="7.07" y2="8.225" width="0.127" layer="51"/>
+<wire x1="7.07" y1="8.225" x2="7.07" y2="-6.725" width="0.127" layer="51"/>
+<wire x1="7.07" y1="-6.725" x2="-7.07" y2="-6.725" width="0.127" layer="51"/>
+<wire x1="-7.07" y1="-6.725" x2="-7.07" y2="8.225" width="0.127" layer="51"/>
+<wire x1="-8" y1="-7.25" x2="8" y2="-7.25" width="0.05" layer="39"/>
+<wire x1="8" y1="-7.25" x2="8" y2="8.5" width="0.05" layer="39"/>
+<wire x1="8" y1="8.5" x2="-8" y2="8.5" width="0.05" layer="39"/>
+<wire x1="-8" y1="8.5" x2="-8" y2="-7.25" width="0.05" layer="39"/>
+<text x="-8.013" y="-6.76096875" size="1.272059375" layer="25" rot="R90">&gt;NAME</text>
+<text x="9.27375" y="-6.76733125" size="1.273259375" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-7.07" y1="7.28" x2="-7.07" y2="8.225" width="0.127" layer="21"/>
+<wire x1="-7.07" y1="8.225" x2="7.07" y2="8.225" width="0.127" layer="21"/>
+<wire x1="7.07" y1="8.225" x2="7.07" y2="7.28" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-6.725" x2="3.9" y2="-6.725" width="0.127" layer="21"/>
+<circle x="-3.81" y="8.89" radius="0.1" width="0.2" layer="21"/>
+<smd name="1" x="-2.9" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="2" x="-1.8" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="3" x="-0.7" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="4" x="0.4" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="5" x="1.5" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="6" x="2.6" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="7" x="3.7" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="8" x="4.8" y="6.355" dx="0.8" dy="1.24" layer="1"/>
+<smd name="P1" x="-7.245" y="5.725" dx="0.95" dy="2.5" layer="1"/>
+<smd name="P2" x="7.145" y="5.875" dx="1.15" dy="2.2" layer="1"/>
+<smd name="SW" x="6.74" y="3.725" dx="1.16" dy="1.25" layer="1"/>
+<smd name="DT" x="6.74" y="-5.275" dx="1.16" dy="1.2" layer="1"/>
+<smd name="P3" x="-7.145" y="-5.605" dx="1.15" dy="2.2" layer="1"/>
+<smd name="P4" x="-2.84" y="-6.4" dx="1.5" dy="1.15" layer="1"/>
+<smd name="P5" x="4.94" y="-6.4" dx="1.5" dy="1.15" layer="1"/>
 </package>
 </packages>
 </library>
@@ -685,27 +671,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="1" y="62.25" locked="yes" size="1.27" layer="25"/>
 <attribute name="VALUE" x="0" y="55.75" locked="yes" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="MEM2080-00-128-00-A_REVA" package="GCT_MEM2080-00-128-00-A_REVA" value="MEM2080-00-128-00-A_REVA" x="13" y="35" smashed="yes" rot="MR270">
-<attribute name="AVAILABILITY" value="In Stock" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DESCRIPTION" value=" 9 (8 + 1) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Global Connector Technology" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="MEM2080-00-128-00-A" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="12.5658" y="35.0292" size="1.27" layer="25" rot="R180"/>
-<attribute name="PACKAGE" value="None" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PRICE" value="None" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MEM2080-00-128-00-A/?ref=eda" x="13" y="35" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="-0.6316" y="29.953" size="1.27" layer="27" align="top-left"/>
+<element name="SD-1" library="503182-1852" package="MOLEX_503182-1852" value="503182-1852" x="11" y="47" smashed="yes" rot="R90">
+<attribute name="AVAILABILITY" value="In Stock" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" 10 (8 + 2) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Molex" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="5031821852" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="17.76096875" y="38.987" size="1.272059375" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5031821852/?ref=eda" x="11" y="47" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="17.76733125" y="56.27375" size="1.273259375" layer="27" rot="R180"/>
 </element>
-<element name="J2" library="MEM2080-00-128-00-A_REVA" package="GCT_MEM2080-00-128-00-A_REVA" value="MEM2080-00-128-00-A_REVA" x="13.046" y="20.632" smashed="yes" rot="MR270">
-<attribute name="AVAILABILITY" value="In Stock" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DESCRIPTION" value=" 9 (8 + 1) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Global Connector Technology" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="MEM2080-00-128-00-A" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="11.6118" y="20.6612" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PRICE" value="None" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MEM2080-00-128-00-A/?ref=eda" x="13.046" y="20.632" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="-0.5856" y="15.585" size="1.27" layer="27" align="top-left"/>
+<element name="SD-2" library="503182-1852" package="MOLEX_503182-1852" value="503182-1852" x="11" y="29" smashed="yes" rot="R90">
+<attribute name="AVAILABILITY" value="In Stock" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" 10 (8 + 2) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Molex" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="5031821852" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="17.76096875" y="20.987" size="1.272059375" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5031821852/?ref=eda" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="17.76733125" y="38.27375" size="1.273259375" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -718,46 +704,50 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="H2" pad="30"/>
 <contactref element="FEATHER1" pad="T1"/>
 <contactref element="FEATHER1" pad="T13"/>
-<contactref element="J2" pad="P6"/>
-<contactref element="J1" pad="P6"/>
-<contactref element="J1" pad="DSW1"/>
-<contactref element="J2" pad="DSW1"/>
-<contactref element="J2" pad="S1"/>
-<contactref element="J2" pad="S4"/>
-<contactref element="J2" pad="S2"/>
-<contactref element="J2" pad="S3"/>
-<contactref element="J1" pad="S1"/>
-<contactref element="J1" pad="S4"/>
-<contactref element="J1" pad="S2"/>
-<contactref element="J1" pad="S3"/>
+<contactref element="SD-2" pad="P3"/>
+<contactref element="SD-2" pad="P5"/>
+<contactref element="SD-2" pad="P1"/>
+<contactref element="SD-2" pad="P2"/>
+<contactref element="SD-2" pad="P4"/>
+<contactref element="SD-2" pad="6"/>
+<contactref element="SD-2" pad="SW"/>
+<contactref element="SD-1" pad="P3"/>
+<contactref element="SD-1" pad="P5"/>
+<contactref element="SD-1" pad="P1"/>
+<contactref element="SD-1" pad="P2"/>
+<contactref element="SD-1" pad="P4"/>
+<contactref element="SD-1" pad="SW"/>
+<contactref element="SD-1" pad="6"/>
 <wire x1="52.07" y1="88.265" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="90.805" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="88.265" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="6.013" y1="76" x2="49.53" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="2" y1="59" x2="6.013" y2="76" width="0" layer="19" extent="1-1"/>
-<wire x1="7.4" y1="41.26" x2="2" y2="59" width="0" layer="19" extent="16-16"/>
-<wire x1="7.385" y1="31.88" x2="7.4" y2="41.26" width="0" layer="19" extent="16-16"/>
-<wire x1="7.885" y1="28.6" x2="7.385" y2="31.88" width="0" layer="19" extent="16-16"/>
-<wire x1="7.446" y1="26.892" x2="7.885" y2="28.6" width="0" layer="19" extent="16-16"/>
-<wire x1="7.431" y1="17.512" x2="7.446" y2="26.892" width="0" layer="19" extent="16-16"/>
-<wire x1="7.931" y1="14.232" x2="7.431" y2="17.512" width="0" layer="19" extent="16-16"/>
-<wire x1="18.65" y1="28.52" x2="7.885" y2="28.6" width="0" layer="19" extent="16-16"/>
-<wire x1="18.696" y1="27.112" x2="18.65" y2="28.52" width="0" layer="19" extent="16-16"/>
-<wire x1="19.896" y1="24.802" x2="18.696" y2="27.112" width="0" layer="19" extent="16-16"/>
-<wire x1="19.85" y1="39.17" x2="18.65" y2="28.52" width="0" layer="19" extent="16-16"/>
-<wire x1="18.65" y1="41.48" x2="19.85" y2="39.17" width="0" layer="19" extent="16-16"/>
-<wire x1="18.696" y1="14.152" x2="19.896" y2="24.802" width="0" layer="19" extent="16-16"/>
-<wire x1="35.4009" y1="41.6052" x2="19.85" y2="39.17" width="0" layer="19" extent="16-16"/>
+<wire x1="35.4009" y1="41.6052" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
 <wire x1="65.8809" y1="41.6052" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="54.145" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="7.275" y1="53.74" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="49.6" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
+<wire x1="5.275" y1="39.755" x2="4.645" y2="49.6" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="51.94" x2="7.275" y2="53.74" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="31.6" x2="17.4" y2="51.94" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="36.145" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
+<wire x1="7.275" y1="35.74" x2="5.125" y2="36.145" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="44.16" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
+<wire x1="16.605" y1="39.855" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
+<wire x1="5.275" y1="21.755" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="33.94" x2="7.275" y2="35.74" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="26.16" x2="17.4" y2="33.94" width="0" layer="19" extent="1-1"/>
+<wire x1="16.605" y1="21.855" x2="17.4" y2="26.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="PL2" pad="4"/>
 <contactref element="FEATHER1" pad="T15"/>
-<contactref element="J1" pad="P4"/>
-<contactref element="J2" pad="P4"/>
-<wire x1="7.431" y1="19.712" x2="70.9609" y2="41.6052" width="0" layer="19" extent="16-16"/>
-<wire x1="7.385" y1="34.08" x2="7.431" y2="19.712" width="0" layer="19" extent="16-16"/>
-<wire x1="4.007" y1="76" x2="7.431" y2="19.712" width="0" layer="19" extent="16-16"/>
+<contactref element="SD-2" pad="4"/>
+<contactref element="SD-1" pad="4"/>
+<wire x1="4.007" y1="76" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="47.4" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="29.4" x2="4.645" y2="47.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="FEATHER1" pad="B1"/>
@@ -832,33 +822,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="5V">
 <contactref element="PL3" pad="1"/>
 </signal>
-<signal name="MISO">
-<contactref element="FEATHER1" pad="T4"/>
-<contactref element="J1" pad="P7"/>
-<contactref element="J2" pad="P7"/>
-<wire x1="7.385" y1="30.78" x2="43.0209" y2="41.6052" width="0" layer="19" extent="16-16"/>
-<wire x1="7.431" y1="16.412" x2="7.385" y2="30.78" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="MOSI">
-<contactref element="FEATHER1" pad="T5"/>
-<contactref element="J1" pad="P3"/>
-<contactref element="J2" pad="P3"/>
-<wire x1="7.385" y1="35.18" x2="45.5609" y2="41.6052" width="0" layer="19" extent="16-16"/>
-<wire x1="7.431" y1="20.812" x2="7.385" y2="35.18" width="0" layer="19" extent="16-16"/>
-</signal>
 <signal name="SCK">
-<contactref element="J2" pad="P5"/>
-<contactref element="J1" pad="P5"/>
 <contactref element="FEATHER1" pad="T6"/>
 <contactref element="H1" pad="21"/>
+<contactref element="SD-2" pad="5"/>
+<contactref element="SD-1" pad="5"/>
 <wire x1="48.1009" y1="41.6052" x2="39.37" y2="83.185" width="0" layer="19" extent="1-1"/>
-<wire x1="7.385" y1="32.98" x2="48.1009" y2="41.6052" width="0" layer="19" extent="16-16"/>
-<wire x1="7.431" y1="18.612" x2="7.385" y2="32.98" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="CS-SD1">
-<contactref element="J1" pad="P2"/>
-<contactref element="J2" pad="P2"/>
-<wire x1="7.431" y1="21.912" x2="7.385" y2="36.28" width="0" layer="19" extent="16-16"/>
+<wire x1="4.645" y1="48.5" x2="48.1009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="30.5" x2="4.645" y2="48.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="H1" pad="24"/>
@@ -881,11 +852,35 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$8">
 <contactref element="H1" pad="17"/>
 </signal>
-<signal name="DETECT-J2">
-<contactref element="J2" pad="DSW2"/>
+<signal name="DETECT-1">
+<contactref element="SD-1" pad="DT"/>
 </signal>
-<signal name="DETECT-J1">
-<contactref element="J1" pad="DSW2"/>
+<signal name="CS-1">
+<contactref element="SD-1" pad="2"/>
+<contactref element="FEATHER1" pad="T12"/>
+<wire x1="4.645" y1="45.2" x2="63.3409" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CS-2">
+<contactref element="SD-2" pad="2"/>
+<contactref element="FEATHER1" pad="T11"/>
+<wire x1="4.645" y1="27.2" x2="60.8009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="COPI">
+<contactref element="SD-2" pad="3"/>
+<contactref element="SD-1" pad="3"/>
+<contactref element="FEATHER1" pad="T5"/>
+<wire x1="4.645" y1="46.3" x2="45.5609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="28.3" x2="4.645" y2="46.3" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CIPO">
+<contactref element="SD-2" pad="7"/>
+<contactref element="FEATHER1" pad="T4"/>
+<contactref element="SD-1" pad="7"/>
+<wire x1="4.645" y1="50.7" x2="43.0209" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="32.7" x2="4.645" y2="50.7" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DETECT-2">
+<contactref element="SD-2" pad="DT"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
