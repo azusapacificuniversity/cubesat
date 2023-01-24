@@ -710,35 +710,31 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="SD-2" pad="P2"/>
 <contactref element="SD-2" pad="P4"/>
 <contactref element="SD-2" pad="6"/>
-<contactref element="SD-2" pad="SW"/>
 <contactref element="SD-1" pad="P3"/>
 <contactref element="SD-1" pad="P5"/>
 <contactref element="SD-1" pad="P1"/>
 <contactref element="SD-1" pad="P2"/>
 <contactref element="SD-1" pad="P4"/>
-<contactref element="SD-1" pad="SW"/>
 <contactref element="SD-1" pad="6"/>
 <wire x1="52.07" y1="88.265" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="90.805" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="88.265" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="6.013" y1="76" x2="49.53" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="2" y1="59" x2="6.013" y2="76" width="0" layer="19" extent="1-1"/>
-<wire x1="35.4009" y1="41.6052" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
-<wire x1="65.8809" y1="41.6052" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="5.125" y1="54.145" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="7.275" y1="53.74" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="54.145" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="49.6" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
 <wire x1="5.275" y1="39.755" x2="4.645" y2="49.6" width="0" layer="19" extent="1-1"/>
-<wire x1="17.4" y1="51.94" x2="7.275" y2="53.74" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="31.6" x2="17.4" y2="51.94" width="0" layer="19" extent="1-1"/>
-<wire x1="5.125" y1="36.145" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
-<wire x1="7.275" y1="35.74" x2="5.125" y2="36.145" width="0" layer="19" extent="1-1"/>
-<wire x1="17.4" y1="44.16" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
-<wire x1="16.605" y1="39.855" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
-<wire x1="5.275" y1="21.755" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
-<wire x1="17.4" y1="33.94" x2="7.275" y2="35.74" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="36.145" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="31.6" x2="5.125" y2="36.145" width="0" layer="19" extent="1-1"/>
+<wire x1="5.275" y1="21.755" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
+<wire x1="16.605" y1="39.855" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="44.16" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="33.94" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="51.94" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="26.16" x2="17.4" y2="33.94" width="0" layer="19" extent="1-1"/>
 <wire x1="16.605" y1="21.855" x2="17.4" y2="26.16" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4009" y1="41.6052" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
+<wire x1="65.8809" y1="41.6052" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="PL2" pad="4"/>
@@ -831,9 +827,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="4.645" y1="48.5" x2="48.1009" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="30.5" x2="4.645" y2="48.5" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
-<contactref element="H1" pad="24"/>
-</signal>
 <signal name="N$2">
 <contactref element="H1" pad="22"/>
 </signal>
@@ -851,9 +844,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="N$8">
 <contactref element="H1" pad="17"/>
-</signal>
-<signal name="DETECT-1">
-<contactref element="SD-1" pad="DT"/>
 </signal>
 <signal name="CS-1">
 <contactref element="SD-1" pad="2"/>
@@ -879,8 +869,25 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="4.645" y1="50.7" x2="43.0209" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="32.7" x2="4.645" y2="50.7" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="DETECT-2">
-<contactref element="SD-2" pad="DT"/>
+<signal name="CS-SD">
+<contactref element="FEATHER1" pad="T10"/>
+<contactref element="H1" pad="24"/>
+<wire x1="58.2609" y1="41.6052" x2="41.91" y2="85.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="UC_RXO">
+<contactref element="FEATHER1" pad="T3"/>
+<contactref element="PL3" pad="8"/>
+<wire x1="8.02" y1="59" x2="40.4809" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="UC_TXO">
+<contactref element="FEATHER1" pad="T2"/>
+<contactref element="PL3" pad="6"/>
+<wire x1="6.013" y1="59" x2="37.9409" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CS-FPGA">
+<contactref element="FEATHER1" pad="T9"/>
+<contactref element="PL3" pad="4"/>
+<wire x1="4.007" y1="59" x2="55.7209" y2="41.6052" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

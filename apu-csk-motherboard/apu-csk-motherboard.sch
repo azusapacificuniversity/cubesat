@@ -1109,6 +1109,10 @@ LETTER landscape</description>
 <text x="218.44" y="137.16" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="162.56" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="180.34" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="218.44" y="157.48" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="218.44" y="154.94" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="218.44" y="114.3" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="218.44" y="111.76" size="1.778" layer="91" rot="MR0">N/C</text>
 </plain>
 <instances>
 <instance part="MT1" gate="G$1" x="152.4" y="30.48" smashed="yes">
@@ -1217,19 +1221,9 @@ LETTER landscape</description>
 <label x="210.82" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SD-2" gate="G$1" pin="SWITCH"/>
-<wire x1="210.82" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
-<label x="210.82" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SD-1" gate="G$1" pin="SHIELD"/>
 <wire x1="210.82" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
 <label x="210.82" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SD-1" gate="G$1" pin="SWITCH"/>
-<wire x1="210.82" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
-<label x="210.82" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SD-1" gate="G$1" pin="VSS"/>
@@ -1456,12 +1450,6 @@ LETTER landscape</description>
 <label x="210.82" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="IO_0@24"/>
-<wire x1="76.2" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="IO_2@22"/>
@@ -1496,13 +1484,6 @@ LETTER landscape</description>
 <segment>
 <pinref part="H1" gate="G$1" pin="IO_7@17"/>
 <wire x1="10.16" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DETECT-1" class="0">
-<segment>
-<pinref part="SD-1" gate="G$1" pin="DETECT"/>
-<wire x1="210.82" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
-<label x="210.82" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CS-1" class="0">
@@ -1563,11 +1544,52 @@ LETTER landscape</description>
 <label x="210.82" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DETECT-2" class="0">
+<net name="CS-SD" class="0">
 <segment>
-<pinref part="SD-2" gate="G$1" pin="DETECT"/>
-<wire x1="210.82" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
-<label x="210.82" y="114.3" size="1.778" layer="95"/>
+<pinref part="FEATHER1" gate="-16" pin="IO20@T10"/>
+<wire x1="157.48" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="157.48" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="IO_0@24"/>
+<wire x1="76.2" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="76.2" y="139.7" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="UC_RXO" class="0">
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="RXI@T3"/>
+<wire x1="154.94" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<label x="154.94" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PL3" gate="G$1" pin="L12@8"/>
+<wire x1="129.54" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+<label x="142.24" y="73.66" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="UC_TXO" class="0">
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="TXO@T2"/>
+<wire x1="154.94" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
+<label x="154.94" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PL3" gate="G$1" pin="P14@6"/>
+<wire x1="142.24" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<label x="142.24" y="76.2" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="CS-FPGA" class="0">
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="IO21@T9"/>
+<wire x1="157.48" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
+<label x="157.48" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PL3" gate="G$1" pin="P8@4"/>
+<wire x1="129.54" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<label x="139.7" y="78.74" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
