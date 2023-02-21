@@ -460,6 +460,91 @@
 </package>
 </packages>
 </library>
+<library name="ATECC608A-SSHDA-B">
+<packages>
+<package name="SOIC127P600X175-8N">
+<circle x="-4.355" y="1.905" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.355" y="1.905" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.95" y1="2.45" x2="1.95" y2="2.45" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="2.525" x2="1.95" y2="2.525" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-2.525" x2="1.95" y2="-2.525" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="1.95" y1="2.45" x2="1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="-3.655" y1="2.7" x2="3.655" y2="2.7" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="-2.7" x2="3.655" y2="-2.7" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="2.7" x2="-3.655" y2="-2.7" width="0.05" layer="39"/>
+<wire x1="3.655" y1="2.7" x2="3.655" y2="-2.7" width="0.05" layer="39"/>
+<text x="-3.85" y="-3" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.85" y="3" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="2" x="-2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="3" x="-2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="4" x="-2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="5" x="2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="6" x="2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="7" x="2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="8" x="2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+</package>
+</packages>
+</library>
+<library name="TSW-104-05-G-T">
+<packages>
+<package name="SAMTEC_TSW-104-05-G-T">
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="6.35" width="0.1" layer="51"/>
+<wire x1="-1.27" y1="6.35" x2="8.89" y2="6.35" width="0.1" layer="51"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="-1.27" width="0.1" layer="51"/>
+<wire x1="8.89" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1" layer="51"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="6.35" width="0.2" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="-1.27" width="0.2" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="-1.27" y2="6.35" width="0.2" layer="21"/>
+<wire x1="8.89" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2" layer="21"/>
+<wire x1="-1.52" y1="-1.52" x2="-1.52" y2="6.6" width="0.05" layer="39"/>
+<wire x1="-1.52" y1="6.6" x2="9.14" y2="6.6" width="0.05" layer="39"/>
+<wire x1="9.14" y1="6.6" x2="9.14" y2="-1.52" width="0.05" layer="39"/>
+<wire x1="9.14" y1="-1.52" x2="-1.52" y2="-1.52" width="0.05" layer="39"/>
+<text x="-2.27" y="7.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.27" y="-3.77" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-1.92" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.92" y="0" radius="0.1" width="0.2" layer="51"/>
+<pad name="01" x="0" y="0" drill="1.02" diameter="1.37" shape="square"/>
+<pad name="02" x="0" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="03" x="0" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="04" x="2.54" y="0" drill="1.02" diameter="1.37"/>
+<pad name="05" x="2.54" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="06" x="2.54" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="07" x="5.08" y="0" drill="1.02" diameter="1.37"/>
+<pad name="08" x="5.08" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="09" x="5.08" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="10" x="7.62" y="0" drill="1.02" diameter="1.37"/>
+<pad name="11" x="7.62" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="12" x="7.62" y="5.08" drill="1.02" diameter="1.37"/>
+</package>
+</packages>
+</library>
+<library name="DS18B20">
+<packages>
+<package name="TO92269P495H695-3">
+<wire x1="-2.246" y1="-2.4" x2="2.246" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-2.475" y1="-0.803" x2="2.475" y2="-0.803" width="0.127" layer="51" curve="-180"/>
+<wire x1="-2.246" y1="-2.268" x2="-2.475" y2="-0.803" width="0.127" layer="51"/>
+<wire x1="2.246" y1="-2.268" x2="2.475" y2="-0.803" width="0.127" layer="51"/>
+<wire x1="-2.246" y1="-2.268" x2="2.246" y2="-2.268" width="0.127" layer="51"/>
+<circle x="-2.69" y="-3.093" radius="0.1" width="0.2" layer="51"/>
+<circle x="-2.69" y="-3.093" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-3.65" y1="1.922" x2="-3.65" y2="-2.518" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="1.922" x2="3.65" y2="1.922" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.518" x2="3.65" y2="1.922" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.518" x2="-3.65" y2="-2.518" width="0.05" layer="39"/>
+<text x="-3.97" y="2.392" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.712" y="-4.858" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.223" y1="0.277" x2="2.223" y2="0.277" width="0.127" layer="21" curve="-128.433"/>
+<pad name="1" x="-2.69" y="-1.37" drill="0.94" diameter="1.41" shape="square"/>
+<pad name="2" x="0" y="-1.37" drill="0.94" diameter="1.41"/>
+<pad name="3" x="2.69" y="-1.37" drill="0.94" diameter="1.41"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -693,6 +778,68 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5031821852/?ref=eda" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="17.76733125" y="38.27375" size="1.273259375" layer="27" rot="R180"/>
 </element>
+<element name="AUTHENTICATION-CHIP" library="ATECC608A-SSHDA-B" package="SOIC127P600X175-8N" value="ATECC608A-SSHDA-B" x="67" y="48" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" IC AUTHENTICATION CHIP 8SOIC " x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Microchip Technology" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="ATECC608A-SSHDA-B" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="63.15" y="51" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="SOIC-8 Microchip Technology" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATECC608A-SSHDA-B/?ref=eda" x="67" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="63.15" y="45" size="1.27" layer="27" align="top-left"/>
+</element>
+<element name="RBF-CONNECTOR" library="TSW-104-05-G-T" package="SAMTEC_TSW-104-05-G-T" value="TSW-104-05-G-T" x="40" y="45" smashed="yes">
+<attribute name="MANUFACTURER" value="Samtec" x="40" y="45" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.73" y="52.6" size="1.27" layer="25"/>
+<attribute name="PARTREV" value="R" x="40" y="45" size="1.778" layer="27" display="off"/>
+<attribute name="STANDARD" value="Manufacturer Recommendations" x="40" y="45" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="37.73" y="41.23" size="1.27" layer="27"/>
+</element>
+<element name="TEMP-SENSE1" library="DS18B20" package="TO92269P495H695-3" value="DS18B20" x="5" y="13" smashed="yes" rot="R270">
+<attribute name="AVAILABILITY" value="In Stock" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value=" Programmable Resolution 1-Wire Digital Thermometer " x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Analog Devices" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="DS18B20+T&amp;amp;R" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="7.392" y="16.97" size="1.27" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="TO92-3 Maxim" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda" x="5" y="13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="0.142" y="16.712" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="TEMP-SENSE2" library="DS18B20" package="TO92269P495H695-3" value="DS18B20" x="86" y="12" smashed="yes" rot="R90">
+<attribute name="AVAILABILITY" value="In Stock" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" Programmable Resolution 1-Wire Digital Thermometer " x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Analog Devices" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="DS18B20+T&amp;amp;R" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="83.608" y="8.03" size="1.27" layer="25" rot="R90"/>
+<attribute name="PACKAGE" value="TO92-3 Maxim" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda" x="86" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="90.858" y="8.288" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="TEMP-SENSE3" library="DS18B20" package="TO92269P495H695-3" value="DS18B20" x="82" y="83" smashed="yes" rot="R90">
+<attribute name="AVAILABILITY" value="In Stock" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" Programmable Resolution 1-Wire Digital Thermometer " x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Analog Devices" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="DS18B20+T&amp;amp;R" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="79.608" y="79.03" size="1.27" layer="25" rot="R90"/>
+<attribute name="PACKAGE" value="TO92-3 Maxim" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda" x="82" y="83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="86.858" y="79.288" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="TEMP-SENSE4" library="DS18B20" package="TO92269P495H695-3" value="DS18B20" x="3" y="85" smashed="yes" rot="R270">
+<attribute name="AVAILABILITY" value="In Stock" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value=" Programmable Resolution 1-Wire Digital Thermometer " x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Analog Devices" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="DS18B20+T&amp;amp;R" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.392" y="88.97" size="1.27" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="TO92-3 Maxim" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-1.858" y="88.712" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -716,34 +863,54 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="SD-1" pad="P2"/>
 <contactref element="SD-1" pad="P4"/>
 <contactref element="SD-1" pad="6"/>
+<contactref element="TEMP-SENSE4" pad="1"/>
+<contactref element="TEMP-SENSE3" pad="1"/>
+<contactref element="TEMP-SENSE2" pad="1"/>
+<contactref element="TEMP-SENSE1" pad="1"/>
+<contactref element="AUTHENTICATION-CHIP" pad="4"/>
 <wire x1="52.07" y1="88.265" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="90.805" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="88.265" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
-<wire x1="6.013" y1="76" x2="49.53" y2="88.265" width="0" layer="19" extent="1-1"/>
-<wire x1="2" y1="59" x2="6.013" y2="76" width="0" layer="19" extent="1-1"/>
-<wire x1="5.125" y1="54.145" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="49.6" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
-<wire x1="5.275" y1="39.755" x2="4.645" y2="49.6" width="0" layer="19" extent="1-1"/>
-<wire x1="5.125" y1="36.145" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="31.6" x2="5.125" y2="36.145" width="0" layer="19" extent="1-1"/>
-<wire x1="5.275" y1="21.755" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
-<wire x1="16.605" y1="39.855" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
-<wire x1="17.4" y1="44.16" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
+<wire x1="64.545" y1="46.095" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
+<wire x1="65.8809" y1="41.6052" x2="64.545" y2="46.095" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4009" y1="41.6052" x2="64.545" y2="46.095" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="44.16" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="16.605" y1="39.855" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="33.94" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="51.94" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="26.16" x2="17.4" y2="33.94" width="0" layer="19" extent="1-1"/>
 <wire x1="16.605" y1="21.855" x2="17.4" y2="26.16" width="0" layer="19" extent="1-1"/>
-<wire x1="35.4009" y1="41.6052" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
-<wire x1="65.8809" y1="41.6052" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="5.275" y1="39.755" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="36.145" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="31.6" x2="5.125" y2="36.145" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="49.6" x2="5.275" y2="39.755" width="0" layer="19" extent="1-1"/>
+<wire x1="5.125" y1="54.145" x2="4.645" y2="49.6" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="59" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
+<wire x1="5.275" y1="21.755" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
+<wire x1="3.63" y1="15.69" x2="5.275" y2="21.755" width="0" layer="19" extent="1-1"/>
+<wire x1="6.013" y1="76" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
+<wire x1="87.37" y1="9.31" x2="65.8809" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="83.37" y1="80.31" x2="3.63" y2="15.69" width="0" layer="19" extent="1-1"/>
+<wire x1="1.63" y1="87.69" x2="83.37" y2="80.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="PL2" pad="4"/>
 <contactref element="FEATHER1" pad="T15"/>
 <contactref element="SD-2" pad="4"/>
 <contactref element="SD-1" pad="4"/>
-<wire x1="4.007" y1="76" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="47.4" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<contactref element="TEMP-SENSE1" pad="3"/>
+<contactref element="TEMP-SENSE2" pad="3"/>
+<contactref element="TEMP-SENSE3" pad="3"/>
+<contactref element="TEMP-SENSE4" pad="3"/>
+<contactref element="AUTHENTICATION-CHIP" pad="8"/>
+<wire x1="70.9609" y1="41.6052" x2="69.455" y2="49.905" width="0" layer="19" extent="1-1"/>
+<wire x1="87.37" y1="14.69" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="47.4" x2="69.455" y2="49.905" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="29.4" x2="4.645" y2="47.4" width="0" layer="19" extent="1-1"/>
+<wire x1="3.63" y1="10.31" x2="4.645" y2="29.4" width="0" layer="19" extent="1-1"/>
+<wire x1="4.007" y1="76" x2="4.645" y2="47.4" width="0" layer="19" extent="1-1"/>
+<wire x1="83.37" y1="85.69" x2="3.63" y2="10.31" width="0" layer="19" extent="1-1"/>
+<wire x1="1.63" y1="82.31" x2="83.37" y2="85.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="FEATHER1" pad="B1"/>
@@ -888,6 +1055,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="FEATHER1" pad="T9"/>
 <contactref element="PL3" pad="4"/>
 <wire x1="4.007" y1="59" x2="55.7209" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DQ-TEMP">
+<contactref element="TEMP-SENSE1" pad="2"/>
+<contactref element="TEMP-SENSE2" pad="2"/>
+<contactref element="TEMP-SENSE3" pad="2"/>
+<contactref element="TEMP-SENSE4" pad="2"/>
+<contactref element="FEATHER1" pad="T8"/>
+<contactref element="H2" pad="16"/>
+<wire x1="53.1809" y1="41.6052" x2="31.75" y2="90.805" width="0" layer="19" extent="1-1"/>
+<wire x1="87.37" y1="12" x2="53.1809" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="3.63" y1="13" x2="53.1809" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="83.37" y1="83" x2="3.63" y2="13" width="0" layer="19" extent="1-1"/>
+<wire x1="1.63" y1="85" x2="83.37" y2="83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

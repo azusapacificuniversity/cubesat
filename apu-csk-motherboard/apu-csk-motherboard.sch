@@ -1070,6 +1070,240 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ATECC608A-SSHDA-B">
+<packages>
+<package name="SOIC127P600X175-8N">
+<circle x="-4.355" y="1.905" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.355" y="1.905" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.95" y1="2.45" x2="1.95" y2="2.45" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="2.525" x2="1.95" y2="2.525" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-2.525" x2="1.95" y2="-2.525" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="1.95" y1="2.45" x2="1.95" y2="-2.45" width="0.127" layer="51"/>
+<wire x1="-3.655" y1="2.7" x2="3.655" y2="2.7" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="-2.7" x2="3.655" y2="-2.7" width="0.05" layer="39"/>
+<wire x1="-3.655" y1="2.7" x2="-3.655" y2="-2.7" width="0.05" layer="39"/>
+<wire x1="3.655" y1="2.7" x2="3.655" y2="-2.7" width="0.05" layer="39"/>
+<text x="-3.85" y="-3" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.85" y="3" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="2" x="-2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="3" x="-2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="4" x="-2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="5" x="2.455" y="-1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="6" x="2.455" y="-0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="7" x="2.455" y="0.635" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+<smd name="8" x="2.455" y="1.905" dx="1.9" dy="0.6" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ATECC608A-SSHDA-B">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.41" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.41" layer="94"/>
+<text x="-12.7" y="13.7" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-16.7" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="NC" x="-17.78" y="5.08" length="middle"/>
+<pin name="SCL" x="-17.78" y="0" length="middle"/>
+<pin name="SDA" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VCC" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ATECC608A-SSHDA-B" prefix="U">
+<description>None &lt;a href="https://pricing.snapeda.com/parts/ATECC608A-SSHDA-B/Microchip%20Technology/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATECC608A-SSHDA-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P600X175-8N">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="NC" pad="1 2 3 7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" IC AUTHENTICATION CHIP 8SOIC "/>
+<attribute name="MF" value="Microchip Technology"/>
+<attribute name="MP" value="ATECC608A-SSHDA-B"/>
+<attribute name="PACKAGE" value="SOIC-8 Microchip Technology"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATECC608A-SSHDA-B/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="TSW-104-05-G-T">
+<packages>
+<package name="SAMTEC_TSW-104-05-G-T">
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="6.35" width="0.1" layer="51"/>
+<wire x1="-1.27" y1="6.35" x2="8.89" y2="6.35" width="0.1" layer="51"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="-1.27" width="0.1" layer="51"/>
+<wire x1="8.89" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1" layer="51"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="6.35" width="0.2" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="-1.27" width="0.2" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="-1.27" y2="6.35" width="0.2" layer="21"/>
+<wire x1="8.89" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2" layer="21"/>
+<wire x1="-1.52" y1="-1.52" x2="-1.52" y2="6.6" width="0.05" layer="39"/>
+<wire x1="-1.52" y1="6.6" x2="9.14" y2="6.6" width="0.05" layer="39"/>
+<wire x1="9.14" y1="6.6" x2="9.14" y2="-1.52" width="0.05" layer="39"/>
+<wire x1="9.14" y1="-1.52" x2="-1.52" y2="-1.52" width="0.05" layer="39"/>
+<text x="-2.27" y="7.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.27" y="-3.77" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-1.92" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.92" y="0" radius="0.1" width="0.2" layer="51"/>
+<pad name="01" x="0" y="0" drill="1.02" diameter="1.37" shape="square"/>
+<pad name="02" x="0" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="03" x="0" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="04" x="2.54" y="0" drill="1.02" diameter="1.37"/>
+<pad name="05" x="2.54" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="06" x="2.54" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="07" x="5.08" y="0" drill="1.02" diameter="1.37"/>
+<pad name="08" x="5.08" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="09" x="5.08" y="5.08" drill="1.02" diameter="1.37"/>
+<pad name="10" x="7.62" y="0" drill="1.02" diameter="1.37"/>
+<pad name="11" x="7.62" y="2.54" drill="1.02" diameter="1.37"/>
+<pad name="12" x="7.62" y="5.08" drill="1.02" diameter="1.37"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TSW-104-05-G-T_SECTION1">
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="-8.12" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="01" x="-12.7" y="5.08" length="middle" direction="pas"/>
+<pin name="02" x="12.7" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="04" x="-12.7" y="2.54" length="middle" direction="pas"/>
+<pin name="05" x="12.7" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="07" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="08" x="12.7" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="10" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+<pin name="11" x="12.7" y="-2.54" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TSW-104-05-G-T_SECTION2">
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="-8.12" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="03" x="-12.7" y="5.08" length="middle" direction="pas"/>
+<pin name="06" x="-12.7" y="2.54" length="middle" direction="pas"/>
+<pin name="09" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="12" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TSW-104-05-G-T" prefix="J">
+<gates>
+<gate name="G$1" symbol="TSW-104-05-G-T_SECTION1" x="0" y="0"/>
+<gate name="G$2" symbol="TSW-104-05-G-T_SECTION2" x="30.48" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SAMTEC_TSW-104-05-G-T">
+<connects>
+<connect gate="G$1" pin="01" pad="01"/>
+<connect gate="G$1" pin="02" pad="02"/>
+<connect gate="G$1" pin="04" pad="04"/>
+<connect gate="G$1" pin="05" pad="05"/>
+<connect gate="G$1" pin="07" pad="07"/>
+<connect gate="G$1" pin="08" pad="08"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$2" pin="03" pad="03"/>
+<connect gate="G$2" pin="06" pad="06"/>
+<connect gate="G$2" pin="09" pad="09"/>
+<connect gate="G$2" pin="12" pad="12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Samtec"/>
+<attribute name="PARTREV" value="R"/>
+<attribute name="STANDARD" value="Manufacturer Recommendations"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="DS18B20">
+<packages>
+<package name="TO92269P495H695-3">
+<wire x1="-2.246" y1="-2.4" x2="2.246" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-2.475" y1="-0.803" x2="2.475" y2="-0.803" width="0.127" layer="51" curve="-180"/>
+<wire x1="-2.246" y1="-2.268" x2="-2.475" y2="-0.803" width="0.127" layer="51"/>
+<wire x1="2.246" y1="-2.268" x2="2.475" y2="-0.803" width="0.127" layer="51"/>
+<wire x1="-2.246" y1="-2.268" x2="2.246" y2="-2.268" width="0.127" layer="51"/>
+<circle x="-2.69" y="-3.093" radius="0.1" width="0.2" layer="51"/>
+<circle x="-2.69" y="-3.093" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-3.65" y1="1.922" x2="-3.65" y2="-2.518" width="0.05" layer="39"/>
+<wire x1="-3.65" y1="1.922" x2="3.65" y2="1.922" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.518" x2="3.65" y2="1.922" width="0.05" layer="39"/>
+<wire x1="3.65" y1="-2.518" x2="-3.65" y2="-2.518" width="0.05" layer="39"/>
+<text x="-3.97" y="2.392" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.712" y="-4.858" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.223" y1="0.277" x2="2.223" y2="0.277" width="0.127" layer="21" curve="-128.433"/>
+<pad name="1" x="-2.69" y="-1.37" drill="0.94" diameter="1.41" shape="square"/>
+<pad name="2" x="0" y="-1.37" drill="0.94" diameter="1.41"/>
+<pad name="3" x="2.69" y="-1.37" drill="0.94" diameter="1.41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DS18B20">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.41" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.41" layer="94"/>
+<text x="-12.7" y="8.62" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-11.62" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="DQ" x="-17.78" y="0" length="middle"/>
+<pin name="VDD" x="17.78" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS18B20" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/DS18B20%2BT%26amp%3BR/Analog%20Devices/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DS18B20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92269P495H695-3">
+<connects>
+<connect gate="G$1" pin="DQ" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Programmable Resolution 1-Wire Digital Thermometer "/>
+<attribute name="MF" value="Analog Devices"/>
+<attribute name="MP" value="DS18B20+T&amp;amp;R"/>
+<attribute name="PACKAGE" value="TO92-3 Maxim"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1092,6 +1326,13 @@ LETTER landscape</description>
 <part name="FRAME1" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
 <part name="SD-1" library="503182-1852" deviceset="503182-1852" device=""/>
 <part name="SD-2" library="503182-1852" deviceset="503182-1852" device=""/>
+<part name="FRAME2" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
+<part name="AUTHENTICATION-CHIP" library="ATECC608A-SSHDA-B" deviceset="ATECC608A-SSHDA-B" device=""/>
+<part name="RBF-CONNECTOR" library="TSW-104-05-G-T" deviceset="TSW-104-05-G-T" device=""/>
+<part name="TEMP-SENSE1" library="DS18B20" deviceset="DS18B20" device=""/>
+<part name="TEMP-SENSE2" library="DS18B20" deviceset="DS18B20" device=""/>
+<part name="TEMP-SENSE3" library="DS18B20" deviceset="DS18B20" device=""/>
+<part name="TEMP-SENSE4" library="DS18B20" deviceset="DS18B20" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1113,6 +1354,7 @@ LETTER landscape</description>
 <text x="218.44" y="154.94" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="114.3" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="111.76" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="271.78" y="175.26" size="1.778" layer="91" rot="MR0">N/C</text>
 </plain>
 <instances>
 <instance part="MT1" gate="G$1" x="152.4" y="30.48" smashed="yes">
@@ -1164,6 +1406,40 @@ LETTER landscape</description>
 <instance part="SD-2" gate="G$1" x="226.06" y="121.92" smashed="yes">
 <attribute name="NAME" x="226.06" y="140.2656" size="2.548" layer="95"/>
 <attribute name="VALUE" x="226.06" y="101.025" size="2.548159375" layer="96"/>
+</instance>
+<instance part="FRAME2" gate="G$2" x="408.94" y="2.54" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="421.64" y="3.81" size="2.54" layer="94"/>
+<attribute name="SHEET" x="495.3" y="3.81" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="426.72" y="21.59" size="2.54" layer="94"/>
+</instance>
+<instance part="FRAME2" gate="G$1" x="261.62" y="2.54" smashed="yes"/>
+<instance part="AUTHENTICATION-CHIP" gate="G$1" x="292.1" y="170.18" smashed="yes">
+<attribute name="NAME" x="279.4" y="183.88" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="279.4" y="153.48" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="RBF-CONNECTOR" gate="G$1" x="287.02" y="139.7" smashed="yes">
+<attribute name="NAME" x="278.9" y="147.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="279.4" y="132.08" size="1.778" layer="96"/>
+</instance>
+<instance part="RBF-CONNECTOR" gate="G$2" x="335.28" y="139.7" smashed="yes">
+<attribute name="NAME" x="327.16" y="147.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="327.66" y="132.08" size="1.778" layer="96"/>
+</instance>
+<instance part="TEMP-SENSE1" gate="G$1" x="292.1" y="116.84" smashed="yes">
+<attribute name="NAME" x="279.4" y="125.46" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="279.4" y="105.22" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE2" gate="G$1" x="292.1" y="91.44" smashed="yes">
+<attribute name="NAME" x="279.4" y="100.06" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="279.4" y="79.82" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE3" gate="G$1" x="292.1" y="66.04" smashed="yes">
+<attribute name="NAME" x="279.4" y="74.66" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="279.4" y="54.42" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE4" gate="G$1" x="292.1" y="40.64" smashed="yes">
+<attribute name="NAME" x="279.4" y="49.26" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="279.4" y="29.02" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -1230,6 +1506,31 @@ LETTER landscape</description>
 <wire x1="210.82" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
 <label x="210.82" y="167.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="35.56" x2="309.88" y2="35.56" width="0.1524" layer="91"/>
+<label x="317.5" y="35.56" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="60.96" x2="309.88" y2="60.96" width="0.1524" layer="91"/>
+<label x="317.5" y="60.96" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="317.5" y="86.36" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="111.76" x2="309.88" y2="111.76" width="0.1524" layer="91"/>
+<label x="317.5" y="111.76" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
+<label x="317.5" y="160.02" size="1.778" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -1251,6 +1552,31 @@ LETTER landscape</description>
 <pinref part="SD-1" gate="G$1" pin="VDD"/>
 <wire x1="210.82" y1="172.72" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
 <label x="210.82" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="VDD"/>
+<wire x1="309.88" y1="121.92" x2="317.5" y2="121.92" width="0.1524" layer="91"/>
+<label x="317.5" y="121.92" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="VDD"/>
+<wire x1="317.5" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="317.5" y="96.52" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="VDD"/>
+<wire x1="317.5" y1="71.12" x2="309.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="317.5" y="71.12" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="VDD"/>
+<wire x1="317.5" y1="45.72" x2="309.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="317.5" y="45.72" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="VCC"/>
+<wire x1="317.5" y1="180.34" x2="309.88" y2="180.34" width="0.1524" layer="91"/>
+<label x="317.5" y="180.34" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1590,6 +1916,39 @@ LETTER landscape</description>
 <pinref part="PL3" gate="G$1" pin="P8@4"/>
 <wire x1="129.54" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="139.7" y="78.74" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="DQ-TEMP" class="0">
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="DQ"/>
+<wire x1="264.16" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
+<label x="264.16" y="116.84" size="1.778" layer="95"/>
+<wire x1="264.16" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="DQ"/>
+<wire x1="264.16" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
+<label x="264.16" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="DQ"/>
+<wire x1="264.16" y1="66.04" x2="274.32" y2="66.04" width="0.1524" layer="91"/>
+<label x="264.16" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="DQ"/>
+<wire x1="264.16" y1="40.64" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="264.16" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="IO22@T8"/>
+<wire x1="154.94" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<label x="154.94" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="H2" gate="G$1" pin="IO_32@16"/>
+<wire x1="60.96" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<label x="73.66" y="60.96" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
