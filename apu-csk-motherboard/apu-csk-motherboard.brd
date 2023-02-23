@@ -789,7 +789,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATECC608A-SSHDA-B/?ref=eda" x="67" y="48" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="63.15" y="45" size="1.27" layer="27" align="top-left"/>
 </element>
-<element name="RBF-CONNECTOR" library="TSW-104-05-G-T" package="SAMTEC_TSW-104-05-G-T" value="TSW-104-05-G-T" x="40" y="45" smashed="yes">
+<element name="LAUNCH-SW-CN" library="TSW-104-05-G-T" package="SAMTEC_TSW-104-05-G-T" value="TSW-104-05-G-T" x="40" y="45" smashed="yes">
 <attribute name="MANUFACTURER" value="Samtec" x="40" y="45" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="37.73" y="52.6" size="1.27" layer="25"/>
 <attribute name="PARTREV" value="R" x="40" y="45" size="1.778" layer="27" display="off"/>
@@ -915,12 +915,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="SDA">
 <contactref element="FEATHER1" pad="B1"/>
 <contactref element="H1" pad="41"/>
-<wire x1="35.4009" y1="21.2852" x2="64.77" y2="83.185" width="0" layer="19" extent="1-1"/>
+<contactref element="AUTHENTICATION-CHIP" pad="5"/>
+<wire x1="69.455" y1="46.095" x2="64.77" y2="83.185" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4009" y1="21.2852" x2="69.455" y2="46.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="FEATHER1" pad="B2"/>
 <contactref element="H1" pad="43"/>
-<wire x1="37.9409" y1="21.2852" x2="67.31" y2="83.185" width="0" layer="19" extent="1-1"/>
+<contactref element="AUTHENTICATION-CHIP" pad="6"/>
+<wire x1="69.455" y1="47.365" x2="67.31" y2="83.185" width="0" layer="19" extent="1-1"/>
+<wire x1="37.9409" y1="21.2852" x2="69.455" y2="47.365" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USER0">
 <contactref element="H1" pad="47"/>
@@ -1012,16 +1016,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$8">
 <contactref element="H1" pad="17"/>
 </signal>
-<signal name="CS-1">
-<contactref element="SD-1" pad="2"/>
-<contactref element="FEATHER1" pad="T12"/>
-<wire x1="4.645" y1="45.2" x2="63.3409" y2="41.6052" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="CS-2">
-<contactref element="SD-2" pad="2"/>
-<contactref element="FEATHER1" pad="T11"/>
-<wire x1="4.645" y1="27.2" x2="60.8009" y2="41.6052" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="COPI">
 <contactref element="SD-2" pad="3"/>
 <contactref element="SD-1" pad="3"/>
@@ -1037,9 +1031,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="4.645" y1="32.7" x2="4.645" y2="50.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CS-SD">
-<contactref element="FEATHER1" pad="T10"/>
 <contactref element="H1" pad="24"/>
-<wire x1="58.2609" y1="41.6052" x2="41.91" y2="85.725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UC_RXO">
 <contactref element="FEATHER1" pad="T3"/>
@@ -1068,6 +1060,52 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="3.63" y1="13" x2="53.1809" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="83.37" y1="83" x2="3.63" y2="13" width="0" layer="19" extent="1-1"/>
 <wire x1="1.63" y1="85" x2="83.37" y2="83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CS-SD-2">
+<contactref element="SD-2" pad="2"/>
+<contactref element="FEATHER1" pad="T11"/>
+<wire x1="4.645" y1="27.2" x2="60.8009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CS-SD-1">
+<contactref element="SD-1" pad="2"/>
+<contactref element="FEATHER1" pad="T12"/>
+<wire x1="4.645" y1="45.2" x2="63.3409" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LSW-1-NO">
+<contactref element="LAUNCH-SW-CN" pad="02"/>
+</signal>
+<signal name="LSW-2-NO">
+<contactref element="LAUNCH-SW-CN" pad="05"/>
+</signal>
+<signal name="LSW-3-NO">
+<contactref element="LAUNCH-SW-CN" pad="08"/>
+</signal>
+<signal name="LSW-4-NO">
+<contactref element="LAUNCH-SW-CN" pad="11"/>
+</signal>
+<signal name="LSW-1-C">
+<contactref element="LAUNCH-SW-CN" pad="03"/>
+</signal>
+<signal name="LSW-2-C">
+<contactref element="LAUNCH-SW-CN" pad="06"/>
+</signal>
+<signal name="LSW-3-C">
+<contactref element="LAUNCH-SW-CN" pad="09"/>
+</signal>
+<signal name="LSW-4-C">
+<contactref element="LAUNCH-SW-CN" pad="12"/>
+</signal>
+<signal name="LSW-4-NC">
+<contactref element="LAUNCH-SW-CN" pad="10"/>
+</signal>
+<signal name="LSW-3-NC">
+<contactref element="LAUNCH-SW-CN" pad="07"/>
+</signal>
+<signal name="LSW-2-NC">
+<contactref element="LAUNCH-SW-CN" pad="04"/>
+</signal>
+<signal name="LSW-1-NC">
+<contactref element="LAUNCH-SW-CN" pad="01"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

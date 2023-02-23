@@ -1326,13 +1326,13 @@ LETTER landscape</description>
 <part name="FRAME1" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
 <part name="SD-1" library="503182-1852" deviceset="503182-1852" device=""/>
 <part name="SD-2" library="503182-1852" deviceset="503182-1852" device=""/>
-<part name="FRAME2" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
 <part name="AUTHENTICATION-CHIP" library="ATECC608A-SSHDA-B" deviceset="ATECC608A-SSHDA-B" device=""/>
-<part name="RBF-CONNECTOR" library="TSW-104-05-G-T" deviceset="TSW-104-05-G-T" device=""/>
+<part name="LAUNCH-SW-CN" library="TSW-104-05-G-T" deviceset="TSW-104-05-G-T" device=""/>
 <part name="TEMP-SENSE1" library="DS18B20" deviceset="DS18B20" device=""/>
 <part name="TEMP-SENSE2" library="DS18B20" deviceset="DS18B20" device=""/>
 <part name="TEMP-SENSE3" library="DS18B20" deviceset="DS18B20" device=""/>
 <part name="TEMP-SENSE4" library="DS18B20" deviceset="DS18B20" device=""/>
+<part name="FRAME3" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1354,7 +1354,6 @@ LETTER landscape</description>
 <text x="218.44" y="154.94" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="114.3" size="1.778" layer="91" rot="MR0">N/C</text>
 <text x="218.44" y="111.76" size="1.778" layer="91" rot="MR0">N/C</text>
-<text x="271.78" y="175.26" size="1.778" layer="91" rot="MR0">N/C</text>
 </plain>
 <instances>
 <instance part="MT1" gate="G$1" x="152.4" y="30.48" smashed="yes">
@@ -1406,40 +1405,6 @@ LETTER landscape</description>
 <instance part="SD-2" gate="G$1" x="226.06" y="121.92" smashed="yes">
 <attribute name="NAME" x="226.06" y="140.2656" size="2.548" layer="95"/>
 <attribute name="VALUE" x="226.06" y="101.025" size="2.548159375" layer="96"/>
-</instance>
-<instance part="FRAME2" gate="G$2" x="408.94" y="2.54" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="421.64" y="3.81" size="2.54" layer="94"/>
-<attribute name="SHEET" x="495.3" y="3.81" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="426.72" y="21.59" size="2.54" layer="94"/>
-</instance>
-<instance part="FRAME2" gate="G$1" x="261.62" y="2.54" smashed="yes"/>
-<instance part="AUTHENTICATION-CHIP" gate="G$1" x="292.1" y="170.18" smashed="yes">
-<attribute name="NAME" x="279.4" y="183.88" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="279.4" y="153.48" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="RBF-CONNECTOR" gate="G$1" x="287.02" y="139.7" smashed="yes">
-<attribute name="NAME" x="278.9" y="147.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="279.4" y="132.08" size="1.778" layer="96"/>
-</instance>
-<instance part="RBF-CONNECTOR" gate="G$2" x="335.28" y="139.7" smashed="yes">
-<attribute name="NAME" x="327.16" y="147.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="327.66" y="132.08" size="1.778" layer="96"/>
-</instance>
-<instance part="TEMP-SENSE1" gate="G$1" x="292.1" y="116.84" smashed="yes">
-<attribute name="NAME" x="279.4" y="125.46" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="279.4" y="105.22" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="TEMP-SENSE2" gate="G$1" x="292.1" y="91.44" smashed="yes">
-<attribute name="NAME" x="279.4" y="100.06" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="279.4" y="79.82" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="TEMP-SENSE3" gate="G$1" x="292.1" y="66.04" smashed="yes">
-<attribute name="NAME" x="279.4" y="74.66" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="279.4" y="54.42" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="TEMP-SENSE4" gate="G$1" x="292.1" y="40.64" smashed="yes">
-<attribute name="NAME" x="279.4" y="49.26" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="279.4" y="29.02" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -1506,31 +1471,6 @@ LETTER landscape</description>
 <wire x1="210.82" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
 <label x="210.82" y="167.64" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="TEMP-SENSE4" gate="G$1" pin="GND"/>
-<wire x1="317.5" y1="35.56" x2="309.88" y2="35.56" width="0.1524" layer="91"/>
-<label x="317.5" y="35.56" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE3" gate="G$1" pin="GND"/>
-<wire x1="317.5" y1="60.96" x2="309.88" y2="60.96" width="0.1524" layer="91"/>
-<label x="317.5" y="60.96" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE2" gate="G$1" pin="GND"/>
-<wire x1="317.5" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
-<label x="317.5" y="86.36" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE1" gate="G$1" pin="GND"/>
-<wire x1="317.5" y1="111.76" x2="309.88" y2="111.76" width="0.1524" layer="91"/>
-<label x="317.5" y="111.76" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="GND"/>
-<wire x1="317.5" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
-<label x="317.5" y="160.02" size="1.778" layer="95" rot="MR0"/>
-</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -1552,31 +1492,6 @@ LETTER landscape</description>
 <pinref part="SD-1" gate="G$1" pin="VDD"/>
 <wire x1="210.82" y1="172.72" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
 <label x="210.82" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE1" gate="G$1" pin="VDD"/>
-<wire x1="309.88" y1="121.92" x2="317.5" y2="121.92" width="0.1524" layer="91"/>
-<label x="317.5" y="121.92" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE2" gate="G$1" pin="VDD"/>
-<wire x1="317.5" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="317.5" y="96.52" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE3" gate="G$1" pin="VDD"/>
-<wire x1="317.5" y1="71.12" x2="309.88" y2="71.12" width="0.1524" layer="91"/>
-<label x="317.5" y="71.12" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE4" gate="G$1" pin="VDD"/>
-<wire x1="317.5" y1="45.72" x2="309.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="317.5" y="45.72" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="VCC"/>
-<wire x1="317.5" y1="180.34" x2="309.88" y2="180.34" width="0.1524" layer="91"/>
-<label x="317.5" y="180.34" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1812,30 +1727,6 @@ LETTER landscape</description>
 <wire x1="10.16" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CS-1" class="0">
-<segment>
-<pinref part="SD-1" gate="G$1" pin="CD/DAT3"/>
-<wire x1="210.82" y1="177.8" x2="220.98" y2="177.8" width="0.1524" layer="91"/>
-<label x="210.82" y="177.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="FEATHER1" gate="-16" pin="IO18@T12"/>
-<wire x1="157.48" y1="127" x2="167.64" y2="127" width="0.1524" layer="91"/>
-<label x="157.48" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CS-2" class="0">
-<segment>
-<pinref part="SD-2" gate="G$1" pin="CD/DAT3"/>
-<wire x1="210.82" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
-<label x="210.82" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="FEATHER1" gate="-16" pin="IO19@T11"/>
-<wire x1="157.48" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-<label x="157.48" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="COPI" class="0">
 <segment>
 <pinref part="SD-2" gate="G$1" pin="CMD"/>
@@ -1872,11 +1763,6 @@ LETTER landscape</description>
 </net>
 <net name="CS-SD" class="0">
 <segment>
-<pinref part="FEATHER1" gate="-16" pin="IO20@T10"/>
-<wire x1="157.48" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
-<label x="157.48" y="132.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="H1" gate="G$1" pin="IO_0@24"/>
 <wire x1="76.2" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 <label x="76.2" y="139.7" size="1.778" layer="95" rot="MR0"/>
@@ -1909,8 +1795,8 @@ LETTER landscape</description>
 <net name="CS-FPGA" class="0">
 <segment>
 <pinref part="FEATHER1" gate="-16" pin="IO21@T9"/>
-<wire x1="157.48" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
-<label x="157.48" y="134.62" size="1.778" layer="95"/>
+<wire x1="154.94" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
+<label x="154.94" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PL3" gate="G$1" pin="P8@4"/>
@@ -1920,27 +1806,6 @@ LETTER landscape</description>
 </net>
 <net name="DQ-TEMP" class="0">
 <segment>
-<pinref part="TEMP-SENSE1" gate="G$1" pin="DQ"/>
-<wire x1="264.16" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
-<label x="264.16" y="116.84" size="1.778" layer="95"/>
-<wire x1="264.16" y1="116.84" x2="274.32" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE2" gate="G$1" pin="DQ"/>
-<wire x1="264.16" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
-<label x="264.16" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE3" gate="G$1" pin="DQ"/>
-<wire x1="264.16" y1="66.04" x2="274.32" y2="66.04" width="0.1524" layer="91"/>
-<label x="264.16" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="TEMP-SENSE4" gate="G$1" pin="DQ"/>
-<wire x1="264.16" y1="40.64" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
-<label x="264.16" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="FEATHER1" gate="-16" pin="IO22@T8"/>
 <wire x1="154.94" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <label x="154.94" y="137.16" size="1.778" layer="95"/>
@@ -1949,6 +1814,249 @@ LETTER landscape</description>
 <pinref part="H2" gate="G$1" pin="IO_32@16"/>
 <wire x1="60.96" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 <label x="73.66" y="60.96" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="CS-SD-2" class="0">
+<segment>
+<pinref part="SD-2" gate="G$1" pin="CD/DAT3"/>
+<wire x1="210.82" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
+<label x="210.82" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="IO19@T11"/>
+<wire x1="154.94" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+<label x="154.94" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS-SD-1" class="0">
+<segment>
+<pinref part="SD-1" gate="G$1" pin="CD/DAT3"/>
+<wire x1="210.82" y1="177.8" x2="220.98" y2="177.8" width="0.1524" layer="91"/>
+<label x="210.82" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="IO18@T12"/>
+<wire x1="154.94" y1="127" x2="167.64" y2="127" width="0.1524" layer="91"/>
+<label x="154.94" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="12.7" y="172.72" size="1.778" layer="91" rot="MR0">N/C</text>
+</plain>
+<instances>
+<instance part="FRAME3" gate="G$2" x="149.86" y="2.54" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="162.56" y="3.81" size="2.54" layer="94"/>
+<attribute name="SHEET" x="236.22" y="3.81" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="167.64" y="21.59" size="2.54" layer="94"/>
+</instance>
+<instance part="FRAME3" gate="G$1" x="2.54" y="2.54" smashed="yes"/>
+<instance part="AUTHENTICATION-CHIP" gate="G$1" x="33.02" y="167.64" smashed="yes">
+<attribute name="NAME" x="20.32" y="181.34" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="20.32" y="150.94" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="LAUNCH-SW-CN" gate="G$1" x="33.02" y="137.16" smashed="yes">
+<attribute name="NAME" x="24.9" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="25.4" y="129.54" size="1.778" layer="96"/>
+</instance>
+<instance part="LAUNCH-SW-CN" gate="G$2" x="88.9" y="137.16" smashed="yes">
+<attribute name="NAME" x="80.78" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="81.28" y="129.54" size="1.778" layer="96"/>
+</instance>
+<instance part="TEMP-SENSE1" gate="G$1" x="33.02" y="114.3" smashed="yes">
+<attribute name="NAME" x="20.32" y="122.92" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="20.32" y="102.68" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE2" gate="G$1" x="33.02" y="88.9" smashed="yes">
+<attribute name="NAME" x="20.32" y="97.52" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="20.32" y="77.28" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE3" gate="G$1" x="33.02" y="63.5" smashed="yes">
+<attribute name="NAME" x="20.32" y="72.12" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="20.32" y="51.88" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TEMP-SENSE4" gate="G$1" x="33.02" y="38.1" smashed="yes">
+<attribute name="NAME" x="20.32" y="46.72" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="20.32" y="26.48" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
+<label x="58.42" y="33.02" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
+<label x="58.42" y="58.42" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<label x="58.42" y="83.82" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<label x="58.42" y="109.22" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<label x="58.42" y="157.48" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="VDD"/>
+<wire x1="50.8" y1="119.38" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
+<label x="58.42" y="119.38" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="VDD"/>
+<wire x1="58.42" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
+<label x="58.42" y="93.98" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="VDD"/>
+<wire x1="58.42" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<label x="58.42" y="68.58" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="VDD"/>
+<wire x1="58.42" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<label x="58.42" y="43.18" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="VCC"/>
+<wire x1="58.42" y1="177.8" x2="50.8" y2="177.8" width="0.1524" layer="91"/>
+<label x="58.42" y="177.8" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="DQ-TEMP" class="0">
+<segment>
+<pinref part="TEMP-SENSE1" gate="G$1" pin="DQ"/>
+<label x="5.08" y="114.3" size="1.778" layer="95"/>
+<wire x1="5.08" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE2" gate="G$1" pin="DQ"/>
+<wire x1="5.08" y1="88.9" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="5.08" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE3" gate="G$1" pin="DQ"/>
+<wire x1="5.08" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
+<label x="5.08" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP-SENSE4" gate="G$1" pin="DQ"/>
+<wire x1="5.08" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<label x="5.08" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="SDA"/>
+<wire x1="7.62" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
+<label x="7.62" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="SCL"/>
+<wire x1="7.62" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
+<label x="7.62" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-1-NO" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="02"/>
+<wire x1="45.72" y1="142.24" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
+<label x="58.42" y="142.24" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LSW-2-NO" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="05"/>
+<wire x1="58.42" y1="139.7" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
+<label x="58.42" y="139.7" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LSW-3-NO" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="08"/>
+<wire x1="58.42" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<label x="58.42" y="137.16" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LSW-4-NO" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="11"/>
+<wire x1="58.42" y1="134.62" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
+<label x="58.42" y="134.62" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="LSW-1-C" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$2" pin="03"/>
+<wire x1="63.5" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<label x="63.5" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-2-C" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$2" pin="06"/>
+<wire x1="63.5" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
+<label x="63.5" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-3-C" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$2" pin="09"/>
+<wire x1="63.5" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
+<label x="63.5" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-4-C" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$2" pin="12"/>
+<wire x1="63.5" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<label x="63.5" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-4-NC" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="10"/>
+<wire x1="7.62" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<label x="7.62" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-3-NC" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="07"/>
+<wire x1="7.62" y1="137.16" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
+<label x="7.62" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-2-NC" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="04"/>
+<wire x1="7.62" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="7.62" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LSW-1-NC" class="0">
+<segment>
+<pinref part="LAUNCH-SW-CN" gate="G$1" pin="01"/>
+<wire x1="7.62" y1="142.24" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
+<label x="7.62" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
