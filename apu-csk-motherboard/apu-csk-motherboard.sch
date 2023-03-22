@@ -67,6 +67,7 @@
 <layer number="58" name="bCad" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -93,8 +94,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="tPlaceRed" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -104,15 +110,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="yes"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -363,6 +394,41 @@
 <pad name="50" x="60.96" y="2.54" drill="1.02" diameter="1.37" rot="R180"/>
 <pad name="51" x="63.5" y="0" drill="1.02" diameter="1.37" rot="R180"/>
 <pad name="52" x="63.5" y="2.54" drill="1.02" diameter="1.37" rot="R180"/>
+</package>
+<package name="FRAM_ADAFRUIT_MB85RSMT">
+<wire x1="-1.906" y1="-1.205" x2="-1.906" y2="1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="1.205" x2="21.464" y2="1.205" width="0.1" layer="51"/>
+<wire x1="21.464" y1="1.205" x2="21.464" y2="-1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="-1.205" x2="21.464" y2="-1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="-1.205" x2="-1.906" y2="1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="1.205" x2="21.464" y2="-1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="1.205" x2="-1.906" y2="1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="-1.205" x2="-1.906" y2="-1.205" width="0.2" layer="21"/>
+<wire x1="-2.156" y1="-1.455" x2="-2.156" y2="1.455" width="0.05" layer="39"/>
+<wire x1="-2.156" y1="1.455" x2="21.714" y2="1.455" width="0.05" layer="39"/>
+<wire x1="21.714" y1="1.455" x2="21.714" y2="-1.455" width="0.05" layer="39"/>
+<wire x1="21.714" y1="-1.455" x2="-2.156" y2="-1.455" width="0.05" layer="39"/>
+<text x="-2.525" y="2.455" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.525" y="-3.705" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2.175" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.175" y="0" radius="0.1" width="0.2" layer="51"/>
+<pad name="01" x="-0.381" y="0" drill="1.02" diameter="1.37" shape="square"/>
+<pad name="02" x="2.159" y="0" drill="1.02" diameter="1.37"/>
+<pad name="03" x="4.699" y="0" drill="1.02" diameter="1.37"/>
+<pad name="04" x="7.239" y="0" drill="1.02" diameter="1.37"/>
+<pad name="05" x="9.779" y="0" drill="1.02" diameter="1.37"/>
+<pad name="06" x="12.319" y="0" drill="1.02" diameter="1.37"/>
+<pad name="07" x="14.859" y="0" drill="1.02" diameter="1.37"/>
+<pad name="08" x="17.399" y="0" drill="1.02" diameter="1.37"/>
+<pad name="09" x="19.939" y="0" drill="1.02" diameter="1.37"/>
+<wire x1="-2.921" y1="12.7" x2="-0.381" y2="15.24" width="0" layer="21" curve="-90"/>
+<wire x1="19.939" y1="15.24" x2="22.479" y2="12.7" width="0" layer="21" curve="-90"/>
+<wire x1="22.479" y1="0" x2="19.939" y2="-2.54" width="0" layer="21" curve="-90"/>
+<wire x1="-0.381" y1="-2.54" x2="-2.921" y2="0" width="0" layer="21" curve="-90"/>
+<wire x1="-2.921" y1="0" x2="-2.921" y2="12.7" width="0" layer="21"/>
+<wire x1="-0.381" y1="15.24" x2="19.939" y2="15.24" width="0" layer="21"/>
+<wire x1="22.479" y1="12.7" x2="22.479" y2="0" width="0" layer="21"/>
+<wire x1="19.939" y1="-2.54" x2="-0.381" y2="-2.54" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -654,6 +720,23 @@
 </symbol>
 <symbol name="BORDER_LETTER_LANDSCAPE">
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="FRAM_ADAFRUIT_MB85RS4MT">
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<text x="-8.12" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="01" x="-12.7" y="10.16" length="middle" direction="pas"/>
+<pin name="02" x="-12.7" y="7.62" length="middle" direction="pas"/>
+<pin name="03" x="-12.7" y="5.08" length="middle" direction="pas"/>
+<pin name="04" x="-12.7" y="2.54" length="middle" direction="pas"/>
+<pin name="05" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="06" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+<pin name="07" x="-12.7" y="-5.08" length="middle" direction="pas"/>
+<pin name="08" x="-12.7" y="-7.62" length="middle" direction="pas"/>
+<pin name="09" x="-12.7" y="-10.16" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -964,6 +1047,29 @@ LETTER landscape</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAM_ADAFRUIT_MB85RSMT" prefix="R">
+<gates>
+<gate name="G$1" symbol="FRAM_ADAFRUIT_MB85RS4MT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FRAM_ADAFRUIT_MB85RSMT">
+<connects>
+<connect gate="G$1" pin="01" pad="01"/>
+<connect gate="G$1" pin="02" pad="02"/>
+<connect gate="G$1" pin="03" pad="03"/>
+<connect gate="G$1" pin="04" pad="04"/>
+<connect gate="G$1" pin="05" pad="05"/>
+<connect gate="G$1" pin="06" pad="06"/>
+<connect gate="G$1" pin="07" pad="07"/>
+<connect gate="G$1" pin="08" pad="08"/>
+<connect gate="G$1" pin="09" pad="09"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1304,6 +1410,95 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="DS3231M_TRL">
+<packages>
+<package name="SOIC127P1032X265-16N">
+<circle x="-6.705" y="5.035" radius="0.1" width="0.2" layer="21"/>
+<circle x="-6.705" y="5.035" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="5.25" x2="-3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="3.8" y1="5.25" x2="3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-5.93" y1="5.5" x2="5.93" y2="5.5" width="0.05" layer="39"/>
+<wire x1="-5.93" y1="-5.5" x2="5.93" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="-5.93" y1="5.5" x2="-5.93" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="5.93" y1="5.5" x2="5.93" y2="-5.5" width="0.05" layer="39"/>
+<text x="-5.85" y="-5.427" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-5.85" y="5.427" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="2" x="-4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="3" x="-4.655" y="1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="4" x="-4.655" y="0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="5" x="-4.655" y="-0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="6" x="-4.655" y="-1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="7" x="-4.655" y="-3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="8" x="-4.655" y="-4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="9" x="4.655" y="-4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="10" x="4.655" y="-3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="11" x="4.655" y="-1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="12" x="4.655" y="-0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="13" x="4.655" y="0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="14" x="4.655" y="1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="15" x="4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="16" x="4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DS3231M+TRL">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.41" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.41" layer="94"/>
+<text x="-12.7" y="21.32" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-24.32" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="SCL" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="!RST" x="-17.78" y="2.54" length="middle"/>
+<pin name="N.C." x="-17.78" y="-2.54" length="middle"/>
+<pin name="SDA" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VCC" x="17.78" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="VBAT" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="32KHZ" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="!NT/SQW" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="17.78" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS3231M+TRL" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/DS3231M%2BTRL/Analog%20Devices/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="DS3231M+TRL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P1032X265-16N">
+<connects>
+<connect gate="A" pin="!NT/SQW" pad="3"/>
+<connect gate="A" pin="!RST" pad="4"/>
+<connect gate="A" pin="32KHZ" pad="1"/>
+<connect gate="A" pin="GND" pad="13"/>
+<connect gate="A" pin="N.C." pad="5 6 7 8 9 10 11 12"/>
+<connect gate="A" pin="SCL" pad="16"/>
+<connect gate="A" pin="SDA" pad="15"/>
+<connect gate="A" pin="VBAT" pad="14"/>
+<connect gate="A" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" ±5ppm, I2C Real-Time Clock "/>
+<attribute name="MF" value="Analog Devices"/>
+<attribute name="MP" value="DS3231M+TRL"/>
+<attribute name="PACKAGE" value="SOIC-16 Maxim"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS3231M+TRL/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1333,6 +1528,8 @@ LETTER landscape</description>
 <part name="TEMP-SENSE3" library="DS18B20" deviceset="DS18B20" device=""/>
 <part name="TEMP-SENSE4" library="DS18B20" deviceset="DS18B20" device=""/>
 <part name="FRAME3" library="apu-csk-motherboard" deviceset="FRAME_LETTER_LANDSCAPE" device=""/>
+<part name="R1" library="apu-csk-motherboard" deviceset="FRAM_ADAFRUIT_MB85RSMT" device=""/>
+<part name="U1" library="DS3231M_TRL" deviceset="DS3231M+TRL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1840,11 +2037,28 @@ LETTER landscape</description>
 <label x="154.94" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CS-FRAM" class="0">
+<segment>
+<pinref part="FEATHER1" gate="-16" pin="IO20@T10"/>
+<wire x1="154.94" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="154.94" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="WP-FRAM" class="0">
+<segment>
+<pinref part="FEATHER1" gate="-12" pin="IO0@B3"/>
+<wire x1="154.94" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
+<label x="154.94" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
 <text x="12.7" y="172.72" size="1.778" layer="91" rot="MR0">N/C</text>
+<text x="71.12" y="175.26" size="1.778" layer="91">N/C</text>
+<text x="71.12" y="157.48" size="1.778" layer="91">N/C</text>
+<text x="73.66" y="99.06" size="1.778" layer="91">N/C</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$2" x="149.86" y="2.54" smashed="yes">
@@ -1881,6 +2095,14 @@ LETTER landscape</description>
 <attribute name="NAME" x="20.32" y="46.72" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="20.32" y="26.48" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
+<instance part="R1" gate="G$1" x="88.9" y="167.64" smashed="yes">
+<attribute name="NAME" x="80.78" y="180.34" size="1.778" layer="95"/>
+<attribute name="VALUE" x="81.28" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="U1" gate="A" x="96.52" y="101.6" smashed="yes">
+<attribute name="NAME" x="83.82" y="122.92" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="83.82" y="77.28" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1911,6 +2133,16 @@ LETTER landscape</description>
 <wire x1="58.42" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
 <label x="58.42" y="157.48" size="1.778" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<wire x1="68.58" y1="172.72" x2="76.2" y2="172.72" width="0.1524" layer="91"/>
+<label x="68.58" y="172.72" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="03"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="GND"/>
+<wire x1="114.3" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<label x="124.46" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -1937,6 +2169,16 @@ LETTER landscape</description>
 <pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="VCC"/>
 <wire x1="58.42" y1="177.8" x2="50.8" y2="177.8" width="0.1524" layer="91"/>
 <label x="58.42" y="177.8" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<wire x1="76.2" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
+<label x="68.58" y="177.8" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="01"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="114.3" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<label x="124.46" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ-TEMP" class="0">
@@ -1967,12 +2209,22 @@ LETTER landscape</description>
 <wire x1="7.62" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
 <label x="7.62" y="162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="SDA"/>
+<wire x1="71.12" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<label x="71.12" y="93.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="AUTHENTICATION-CHIP" gate="G$1" pin="SCL"/>
 <wire x1="7.62" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
 <label x="7.62" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="SCL"/>
+<wire x1="71.12" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="71.12" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LSW-1-NO" class="0">
@@ -2057,6 +2309,65 @@ LETTER landscape</description>
 <pinref part="LAUNCH-SW-CN" gate="G$1" pin="01"/>
 <wire x1="7.62" y1="142.24" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
 <label x="7.62" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<wire x1="68.58" y1="170.18" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
+<label x="68.58" y="170.18" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="04"/>
+</segment>
+</net>
+<net name="CIPO" class="0">
+<segment>
+<wire x1="68.58" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
+<label x="68.58" y="167.64" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="05"/>
+</segment>
+</net>
+<net name="COPI" class="0">
+<segment>
+<wire x1="68.58" y1="165.1" x2="76.2" y2="165.1" width="0.1524" layer="91"/>
+<label x="68.58" y="165.1" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="06"/>
+</segment>
+</net>
+<net name="CS-FRAM" class="0">
+<segment>
+<wire x1="63.5" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
+<label x="63.5" y="162.56" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="07"/>
+</segment>
+</net>
+<net name="WP-FRAM" class="0">
+<segment>
+<wire x1="63.5" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
+<label x="63.5" y="160.02" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="08"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VBAT"/>
+<wire x1="114.3" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="!RST"/>
+<wire x1="66.04" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="!NT/SQW"/>
+<wire x1="114.3" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RTCLOCK" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="32KHZ"/>
+<wire x1="114.3" y1="111.76" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

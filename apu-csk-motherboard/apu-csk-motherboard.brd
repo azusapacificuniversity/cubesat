@@ -67,6 +67,7 @@
 <layer number="58" name="bCad" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -93,8 +94,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="tPlaceRed" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -104,15 +110,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="yes"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -417,6 +448,41 @@
 <pad name="51" x="63.5" y="0" drill="1.02" diameter="1.37" rot="R180"/>
 <pad name="52" x="63.5" y="2.54" drill="1.02" diameter="1.37" rot="R180"/>
 </package>
+<package name="FRAM_ADAFRUIT_MB85RSMT">
+<wire x1="-1.906" y1="-1.205" x2="-1.906" y2="1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="1.205" x2="21.464" y2="1.205" width="0.1" layer="51"/>
+<wire x1="21.464" y1="1.205" x2="21.464" y2="-1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="-1.205" x2="21.464" y2="-1.205" width="0.1" layer="51"/>
+<wire x1="-1.906" y1="-1.205" x2="-1.906" y2="1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="1.205" x2="21.464" y2="-1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="1.205" x2="-1.906" y2="1.205" width="0.2" layer="21"/>
+<wire x1="21.464" y1="-1.205" x2="-1.906" y2="-1.205" width="0.2" layer="21"/>
+<wire x1="-2.156" y1="-1.455" x2="-2.156" y2="1.455" width="0.05" layer="39"/>
+<wire x1="-2.156" y1="1.455" x2="21.714" y2="1.455" width="0.05" layer="39"/>
+<wire x1="21.714" y1="1.455" x2="21.714" y2="-1.455" width="0.05" layer="39"/>
+<wire x1="21.714" y1="-1.455" x2="-2.156" y2="-1.455" width="0.05" layer="39"/>
+<text x="-2.525" y="2.455" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.525" y="-3.705" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2.175" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.175" y="0" radius="0.1" width="0.2" layer="51"/>
+<pad name="01" x="-0.381" y="0" drill="1.02" diameter="1.37" shape="square"/>
+<pad name="02" x="2.159" y="0" drill="1.02" diameter="1.37"/>
+<pad name="03" x="4.699" y="0" drill="1.02" diameter="1.37"/>
+<pad name="04" x="7.239" y="0" drill="1.02" diameter="1.37"/>
+<pad name="05" x="9.779" y="0" drill="1.02" diameter="1.37"/>
+<pad name="06" x="12.319" y="0" drill="1.02" diameter="1.37"/>
+<pad name="07" x="14.859" y="0" drill="1.02" diameter="1.37"/>
+<pad name="08" x="17.399" y="0" drill="1.02" diameter="1.37"/>
+<pad name="09" x="19.939" y="0" drill="1.02" diameter="1.37"/>
+<wire x1="-2.921" y1="12.7" x2="-0.381" y2="15.24" width="0" layer="21" curve="-90"/>
+<wire x1="19.939" y1="15.24" x2="22.479" y2="12.7" width="0" layer="21" curve="-90"/>
+<wire x1="22.479" y1="0" x2="19.939" y2="-2.54" width="0" layer="21" curve="-90"/>
+<wire x1="-0.381" y1="-2.54" x2="-2.921" y2="0" width="0" layer="21" curve="-90"/>
+<wire x1="-2.921" y1="0" x2="-2.921" y2="12.7" width="0" layer="21"/>
+<wire x1="-0.381" y1="15.24" x2="19.939" y2="15.24" width="0" layer="21"/>
+<wire x1="22.479" y1="12.7" x2="22.479" y2="0" width="0" layer="21"/>
+<wire x1="19.939" y1="-2.54" x2="-0.381" y2="-2.54" width="0" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="503182-1852">
@@ -542,6 +608,42 @@
 <pad name="1" x="-2.69" y="-1.37" drill="0.94" diameter="1.41" shape="square"/>
 <pad name="2" x="0" y="-1.37" drill="0.94" diameter="1.41"/>
 <pad name="3" x="2.69" y="-1.37" drill="0.94" diameter="1.41"/>
+</package>
+</packages>
+</library>
+<library name="DS3231M_TRL">
+<packages>
+<package name="SOIC127P1032X265-16N">
+<circle x="-6.705" y="5.035" radius="0.1" width="0.2" layer="21"/>
+<circle x="-6.705" y="5.035" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-5.25" x2="3.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="5.25" x2="-3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="3.8" y1="5.25" x2="3.8" y2="-5.25" width="0.127" layer="51"/>
+<wire x1="-5.93" y1="5.5" x2="5.93" y2="5.5" width="0.05" layer="39"/>
+<wire x1="-5.93" y1="-5.5" x2="5.93" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="-5.93" y1="5.5" x2="-5.93" y2="-5.5" width="0.05" layer="39"/>
+<wire x1="5.93" y1="5.5" x2="5.93" y2="-5.5" width="0.05" layer="39"/>
+<text x="-5.85" y="-5.427" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-5.85" y="5.427" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="2" x="-4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="3" x="-4.655" y="1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="4" x="-4.655" y="0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="5" x="-4.655" y="-0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="6" x="-4.655" y="-1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="7" x="-4.655" y="-3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="8" x="-4.655" y="-4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="9" x="4.655" y="-4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="10" x="4.655" y="-3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="11" x="4.655" y="-1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="12" x="4.655" y="-0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="13" x="4.655" y="0.635" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="14" x="4.655" y="1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="15" x="4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
+<smd name="16" x="4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
 </package>
 </packages>
 </library>
@@ -778,16 +880,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5031821852/?ref=eda" x="11" y="29" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="17.76733125" y="38.27375" size="1.273259375" layer="27" rot="R180"/>
 </element>
-<element name="AUTHENTICATION-CHIP" library="ATECC608A-SSHDA-B" package="SOIC127P600X175-8N" value="ATECC608A-SSHDA-B" x="67" y="48" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" IC AUTHENTICATION CHIP 8SOIC " x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Microchip Technology" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="ATECC608A-SSHDA-B" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="63.15" y="51" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="SOIC-8 Microchip Technology" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATECC608A-SSHDA-B/?ref=eda" x="67" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="63.15" y="45" size="1.27" layer="27" align="top-left"/>
+<element name="AUTHENTICATION-CHIP" library="ATECC608A-SSHDA-B" package="SOIC127P600X175-8N" value="ATECC608A-SSHDA-B" x="55" y="48" smashed="yes" rot="R90">
+<attribute name="AVAILABILITY" value="In Stock" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" IC AUTHENTICATION CHIP 8SOIC " x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Microchip Technology" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="ATECC608A-SSHDA-B" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="52" y="44.15" size="1.27" layer="25" rot="R90"/>
+<attribute name="PACKAGE" value="SOIC-8 Microchip Technology" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATECC608A-SSHDA-B/?ref=eda" x="55" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="58" y="44.15" size="1.27" layer="27" rot="R90" align="top-left"/>
 </element>
 <element name="LAUNCH-SW-CN" library="TSW-104-05-G-T" package="SAMTEC_TSW-104-05-G-T" value="TSW-104-05-G-T" x="40" y="45" smashed="yes">
 <attribute name="MANUFACTURER" value="Samtec" x="40" y="45" size="1.778" layer="27" display="off"/>
@@ -840,6 +942,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS18B20+T&amp;amp;R/?ref=eda" x="3" y="85" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-1.858" y="88.712" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="R1" library="apu-csk-motherboard" package="FRAM_ADAFRUIT_MB85RSMT" value="FRAM_ADAFRUIT_MB85RSMT" x="42" y="78" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.455" y="81.525" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="44.295" y="80.525" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="U1" library="DS3231M_TRL" package="SOIC127P1032X265-16N" value="DS3231M+TRL" x="48" y="12" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" ±5ppm, I2C Real-Time Clock " x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Analog Devices" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="DS3231M+TRL" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="53.85" y="6.573" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="SOIC-16 Maxim" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DS3231M+TRL/?ref=eda" x="48" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="53.85" y="17.427" size="1.27" layer="27" rot="R180" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -868,12 +985,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="TEMP-SENSE2" pad="1"/>
 <contactref element="TEMP-SENSE1" pad="1"/>
 <contactref element="AUTHENTICATION-CHIP" pad="4"/>
-<wire x1="52.07" y1="88.265" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="03"/>
+<contactref element="U1" pad="13"/>
+<wire x1="52.07" y1="88.265" x2="83.37" y2="80.31" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="90.805" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="90.805" x2="52.07" y2="90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="88.265" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
-<wire x1="64.545" y1="46.095" x2="52.07" y2="88.265" width="0" layer="19" extent="1-1"/>
-<wire x1="65.8809" y1="41.6052" x2="64.545" y2="46.095" width="0" layer="19" extent="1-1"/>
-<wire x1="35.4009" y1="41.6052" x2="64.545" y2="46.095" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="73.301" x2="49.53" y2="88.265" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4009" y1="41.6052" x2="42" y2="73.301" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="44.16" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="16.605" y1="39.855" x2="17.4" y2="44.16" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="33.94" x2="16.605" y2="39.855" width="0" layer="19" extent="1-1"/>
@@ -888,10 +1007,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="2" y1="59" x2="5.125" y2="54.145" width="0" layer="19" extent="1-1"/>
 <wire x1="5.275" y1="21.755" x2="4.645" y2="31.6" width="0" layer="19" extent="1-1"/>
 <wire x1="3.63" y1="15.69" x2="5.275" y2="21.755" width="0" layer="19" extent="1-1"/>
+<wire x1="43.345" y1="11.365" x2="3.63" y2="15.69" width="0" layer="19" extent="1-1"/>
 <wire x1="6.013" y1="76" x2="2" y2="59" width="0" layer="19" extent="1-1"/>
+<wire x1="1.63" y1="87.69" x2="6.013" y2="76" width="0" layer="19" extent="1-1"/>
+<wire x1="56.905" y1="45.545" x2="35.4009" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="65.8809" y1="41.6052" x2="56.905" y2="45.545" width="0" layer="19" extent="1-1"/>
 <wire x1="87.37" y1="9.31" x2="65.8809" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="83.37" y1="80.31" x2="3.63" y2="15.69" width="0" layer="19" extent="1-1"/>
-<wire x1="1.63" y1="87.69" x2="83.37" y2="80.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="PL2" pad="4"/>
@@ -903,28 +1024,36 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="TEMP-SENSE3" pad="3"/>
 <contactref element="TEMP-SENSE4" pad="3"/>
 <contactref element="AUTHENTICATION-CHIP" pad="8"/>
-<wire x1="70.9609" y1="41.6052" x2="69.455" y2="49.905" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="01"/>
+<contactref element="U1" pad="2"/>
+<wire x1="53.095" y1="50.455" x2="83.37" y2="85.69" width="0" layer="19" extent="1-1"/>
+<wire x1="70.9609" y1="41.6052" x2="53.095" y2="50.455" width="0" layer="19" extent="1-1"/>
 <wire x1="87.37" y1="14.69" x2="70.9609" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="47.4" x2="69.455" y2="49.905" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="78.381" x2="53.095" y2="50.455" width="0" layer="19" extent="1-1"/>
+<wire x1="4.007" y1="76" x2="42" y2="78.381" width="0" layer="19" extent="1-1"/>
+<wire x1="1.63" y1="82.31" x2="4.007" y2="76" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="47.4" x2="4.007" y2="76" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="29.4" x2="4.645" y2="47.4" width="0" layer="19" extent="1-1"/>
 <wire x1="3.63" y1="10.31" x2="4.645" y2="29.4" width="0" layer="19" extent="1-1"/>
-<wire x1="4.007" y1="76" x2="4.645" y2="47.4" width="0" layer="19" extent="1-1"/>
-<wire x1="83.37" y1="85.69" x2="3.63" y2="10.31" width="0" layer="19" extent="1-1"/>
-<wire x1="1.63" y1="82.31" x2="83.37" y2="85.69" width="0" layer="19" extent="1-1"/>
+<wire x1="52.655" y1="8.825" x2="3.63" y2="10.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="FEATHER1" pad="B1"/>
 <contactref element="H1" pad="41"/>
 <contactref element="AUTHENTICATION-CHIP" pad="5"/>
-<wire x1="69.455" y1="46.095" x2="64.77" y2="83.185" width="0" layer="19" extent="1-1"/>
-<wire x1="35.4009" y1="21.2852" x2="69.455" y2="46.095" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="15"/>
+<wire x1="56.905" y1="50.455" x2="64.77" y2="83.185" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4009" y1="21.2852" x2="56.905" y2="50.455" width="0" layer="19" extent="1-1"/>
+<wire x1="43.345" y1="8.825" x2="35.4009" y2="21.2852" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="FEATHER1" pad="B2"/>
 <contactref element="H1" pad="43"/>
 <contactref element="AUTHENTICATION-CHIP" pad="6"/>
-<wire x1="69.455" y1="47.365" x2="67.31" y2="83.185" width="0" layer="19" extent="1-1"/>
-<wire x1="37.9409" y1="21.2852" x2="69.455" y2="47.365" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="16"/>
+<wire x1="55.635" y1="50.455" x2="67.31" y2="83.185" width="0" layer="19" extent="1-1"/>
+<wire x1="37.9409" y1="21.2852" x2="55.635" y2="50.455" width="0" layer="19" extent="1-1"/>
+<wire x1="43.345" y1="7.555" x2="37.9409" y2="21.2852" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USER0">
 <contactref element="H1" pad="47"/>
@@ -994,9 +1123,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="H1" pad="21"/>
 <contactref element="SD-2" pad="5"/>
 <contactref element="SD-1" pad="5"/>
+<contactref element="R1" pad="04"/>
 <wire x1="48.1009" y1="41.6052" x2="39.37" y2="83.185" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="48.5" x2="48.1009" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="30.5" x2="4.645" y2="48.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="70.761" x2="4.645" y2="30.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="H1" pad="22"/>
@@ -1020,15 +1151,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="SD-2" pad="3"/>
 <contactref element="SD-1" pad="3"/>
 <contactref element="FEATHER1" pad="T5"/>
+<contactref element="R1" pad="06"/>
 <wire x1="4.645" y1="46.3" x2="45.5609" y2="41.6052" width="0" layer="19" extent="1-1"/>
 <wire x1="4.645" y1="28.3" x2="4.645" y2="46.3" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="65.681" x2="4.645" y2="28.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CIPO">
 <contactref element="SD-2" pad="7"/>
 <contactref element="FEATHER1" pad="T4"/>
 <contactref element="SD-1" pad="7"/>
-<wire x1="4.645" y1="50.7" x2="43.0209" y2="41.6052" width="0" layer="19" extent="1-1"/>
-<wire x1="4.645" y1="32.7" x2="4.645" y2="50.7" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="05"/>
+<wire x1="4.645" y1="32.7" x2="43.0209" y2="41.6052" width="0" layer="19" extent="1-1"/>
+<wire x1="4.645" y1="50.7" x2="4.645" y2="32.7" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="68.221" x2="4.645" y2="32.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CS-SD">
 <contactref element="H1" pad="24"/>
@@ -1106,6 +1241,28 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="LSW-1-NC">
 <contactref element="LAUNCH-SW-CN" pad="01"/>
+</signal>
+<signal name="CS-FRAM">
+<contactref element="FEATHER1" pad="T10"/>
+<contactref element="R1" pad="07"/>
+<wire x1="42" y1="63.141" x2="58.2609" y2="41.6052" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="WP-FRAM">
+<contactref element="FEATHER1" pad="B3"/>
+<contactref element="R1" pad="08"/>
+<wire x1="42" y1="60.601" x2="40.4809" y2="21.2852" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="U1" pad="14"/>
+</signal>
+<signal name="N$9">
+<contactref element="U1" pad="4"/>
+</signal>
+<signal name="N$11">
+<contactref element="U1" pad="3"/>
+</signal>
+<signal name="RTCLOCK">
+<contactref element="U1" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
