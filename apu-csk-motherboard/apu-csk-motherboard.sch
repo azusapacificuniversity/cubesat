@@ -653,6 +653,20 @@
 <pad name="11" x="7.62" y="2.54" drill="1.02" diameter="1.37"/>
 <pad name="12" x="7.62" y="5.08" drill="1.02" diameter="1.37"/>
 </package>
+<package name="CAPC2012X94N">
+<text x="-1.71" y="-1.07" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.71" y="1.07" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="1.1" y1="-0.72" x2="-1.1" y2="-0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.72" x2="1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.1" y1="-0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.713" y1="-0.983" x2="1.713" y2="-0.983" width="0.05" layer="39"/>
+<wire x1="-1.713" y1="0.983" x2="1.713" y2="0.983" width="0.05" layer="39"/>
+<wire x1="-1.713" y1="-0.983" x2="-1.713" y2="0.983" width="0.05" layer="39"/>
+<wire x1="1.713" y1="-0.983" x2="1.713" y2="0.983" width="0.05" layer="39"/>
+<smd name="1" x="-0.88" y="0" dx="1.16" dy="1.47" layer="1"/>
+<smd name="2" x="0.88" y="0" dx="1.16" dy="1.47" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ICEWERX-PL2">
@@ -1091,6 +1105,22 @@
 <pin name="06" x="-12.7" y="2.54" length="middle" direction="pas"/>
 <pin name="09" x="-12.7" y="0" length="middle" direction="pas"/>
 <pin name="12" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+</symbol>
+<symbol name="08053C104KAT2A">
+<text x="0" y="3.81093125" size="1.77843125" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08848125" size="1.78096875" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-1.90685625" x2="0.635" y2="1.905" layer="94"/>
+<rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="08053C105KAT2A">
+<text x="0" y="3.81093125" size="1.77843125" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08848125" size="1.78096875" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-1.90685625" x2="0.635" y2="1.905" layer="94"/>
+<rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1647,6 +1677,56 @@ LETTER landscape</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="08053C104KAT2A" prefix="C">
+<description>Cap Ceramic 0.1uF 25V X7R 10% Pad SMD 0805 125 T/R &lt;a href="https://pricing.snapeda.com/parts/08053C104KAT2A/AVX/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="08053C104KAT2A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC2012X94N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 0.1 µF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric) "/>
+<attribute name="MF" value="AVX"/>
+<attribute name="MP" value="08053C104KAT2A"/>
+<attribute name="PACKAGE" value="2012 AVX"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/08053C104KAT2A/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="08053C105KAT2A" prefix="C">
+<description>Cap Ceramic 1uF 25V X7R 10% SMD 0805 125°C Embossed T/R &lt;a href="https://pricing.snapeda.com/parts/08053C105KAT2A/AVX/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="08053C105KAT2A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC2012X94N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" 1 µF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric) "/>
+<attribute name="MF" value="AVX"/>
+<attribute name="MP" value="08053C105KAT2A"/>
+<attribute name="PACKAGE" value="2012 AVX"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/08053C105KAT2A/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1685,6 +1765,8 @@ LETTER landscape</description>
 <part name="R3" library="apu-csk-motherboard" deviceset="RMCF0805JT10K0" device=""/>
 <part name="U$1" library="apu-csk-motherboard" deviceset="DIO_PMEG4030ER,115" device=""/>
 <part name="U$2" library="apu-csk-motherboard" deviceset="DIO_PMEG4030ER,115" device=""/>
+<part name="C1" library="apu-csk-motherboard" deviceset="08053C104KAT2A" device=""/>
+<part name="C2" library="apu-csk-motherboard" deviceset="08053C105KAT2A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2413,7 +2495,7 @@ LETTER landscape</description>
 <segment>
 <pinref part="PL2" gate="G$1" pin="3V3@4"/>
 <wire x1="139.7" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
-<label x="139.7" y="154.94" size="1.778" layer="95"/>
+<label x="139.7" y="154.94" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="CATHODE"/>
@@ -2481,6 +2563,14 @@ LETTER landscape</description>
 <attribute name="NAME" x="130.81" y="105.41" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="121.92" y="105.41" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="C1" gate="G$1" x="142.24" y="114.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.05093125" y="114.3" size="1.77843125" layer="95" rot="R270"/>
+<attribute name="VALUE" x="137.15151875" y="114.3" size="1.78096875" layer="96" rot="R270"/>
+</instance>
+<instance part="C2" gate="G$1" x="154.94" y="114.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="158.75093125" y="114.3" size="1.77843125" layer="95" rot="R270"/>
+<attribute name="VALUE" x="149.85151875" y="114.3" size="1.78096875" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2526,6 +2616,16 @@ LETTER landscape</description>
 <wire x1="127" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <label x="119.38" y="93.98" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="109.22" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
+<label x="142.24" y="104.14" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="109.22" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<label x="154.94" y="104.14" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -2560,8 +2660,16 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="114.3" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
-<label x="124.46" y="119.38" size="1.778" layer="95"/>
+<wire x1="114.3" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="160.02" y="119.38" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="116.84" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
+<junction x="154.94" y="119.38"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="116.84" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<junction x="142.24" y="119.38"/>
 </segment>
 </net>
 <net name="DQ-TEMP" class="0">
